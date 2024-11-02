@@ -25,7 +25,16 @@ $text-heading-color: #ffff;
     font-family: "Poppins", serif;
 }
 body{
+
+    background: $background-color;
+}
+
+.siteContainer{
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
+}
+
+a{
+    text-decoration: none;
 }

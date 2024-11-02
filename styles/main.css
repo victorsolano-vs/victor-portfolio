@@ -7,7 +7,51 @@
 }
 
 body {
+  background: #121212;
+}
+
+.siteContainer {
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbarContent {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarContent .logo {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+.navbarContent .linksContent {
+  display: none;
+}
+.navbarContent #themeToggle {
+  outline: none;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+}
+
+.sun-svg {
+  width: 20px;
+  height: 20px;
+}
+.sun-svg path {
+  stroke: white;
 }

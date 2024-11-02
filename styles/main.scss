@@ -1,4 +1,49 @@
 @import 'config';
 
+nav{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+// navbar content styles
+.navbarContent{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        color: $text-heading-color;
+    }
+
+    .linksContent{
+        display: none;
+    }
+
+    #themeToggle{
+        outline: none;
+        border: none;
+        // line-height: 1; //this is another work around
+        background: transparent;
+        display: inline-flex;
+    }
+
+}
+
+.sun-svg{
+    width: 20px;
+    height: 20px;
+    path{
+        stroke: $text-heading-color;
+    }
+
+}
+
+
 
 @import 'responsive';
