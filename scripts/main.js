@@ -1,3 +1,7 @@
+import { myStack } from "./objects.js"
+
+console.log(myStack)
+
 // code to toggle light/dark theme
 const themeToggleBtn = document.getElementById('themeToggle')
 console.log(themeToggleBtn)

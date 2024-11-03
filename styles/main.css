@@ -32,7 +32,7 @@
 
 body {
   background: var(--background-color);
-  transition: background 0.3s ease;
+  transition: background 0.4s ease;
 }
 
 .siteContainer {
@@ -62,7 +62,7 @@ a {
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: var(--text-heading-color);
-  transition: color, transform 0.3s ease;
+  transition: color, transform 0.4s ease;
 }
 .navbarContent .logo:hover {
   transform: scale(0.9);
@@ -88,7 +88,7 @@ a {
 .navbarContent .linksContent a {
   color: var(--text-heading-color);
   font-size: 0.875rem;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 .navbarContent #themeToggle {
   outline: none;
