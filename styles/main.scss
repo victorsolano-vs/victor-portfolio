@@ -17,7 +17,7 @@
         font-size: 1rem;
         font-weight: 600;
         letter-spacing: 0.1rem;
-        color: $text-heading-color;
+        color: var(--text-heading-color);
         transition: transform 0.5s ease;
 
         &:hover{
@@ -31,7 +31,7 @@
         max-width: 25rem;
         flex-grow: 0.3;
             a{
-                color: $text-heading-color;
+                color: var(--text-heading-color);
                 font-size: $md;
             }
     }
@@ -57,7 +57,7 @@
     }
 
     path{
-        stroke: $text-heading-color;
+        stroke: var(--text-heading-color);
     }
 }
 
@@ -68,7 +68,7 @@
     bottom: 0;
     width: 100%;
     z-index: 99;
-    border-top: 1px solid $accent-color;
+    border-top: 1px solid var(--accent-color);
     @include frostedBackground;
 }
 
@@ -77,7 +77,7 @@
     padding: 0.8rem 1.5rem;
 
     .navLink{
-        color: $text-heading-color;
+        color: var(--text-heading-color);
         padding: 1rem;
         font-size: $md;
     }
