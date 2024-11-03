@@ -29,11 +29,12 @@ $sz7: 75rem;
 $sz8: 87.5rem;
 
 // font size variables
-//11
-//12
-//14
-//15
-//16
+$sm: 0.75rem; //12px
+$md: 0.875rem; //14px
+$lg: 0.938rem;//15px
+$xlg:1.25rem; //20px
+$xxlg: 2.813rem; //45px
+
 
 
 *{
@@ -63,4 +64,9 @@ a{
     list-style: none;
     align-items: center;
     justify-content: space-between;
+}
+
+@mixin frostedBackground{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }

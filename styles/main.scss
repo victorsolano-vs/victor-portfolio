@@ -1,14 +1,13 @@
 @import 'config';
 
 .navbar{
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    @include frostedBackground;
 }
 
 
 // navbar content styles
 .navbarContent{
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,6 +61,7 @@
     bottom: 0;
     width: 100%;
     z-index: 99;
+    @include frostedBackground;
 }
 
 .mobileLinksContent{
@@ -83,6 +83,7 @@
         font-size: 0.875rem;
     }
 }
+
 
 
 
