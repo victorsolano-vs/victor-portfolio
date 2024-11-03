@@ -7,9 +7,34 @@
 }
 @media (min-width: $sz3){// 576px
 
+    
+}
+@media (min-width: 640px){// 640px
+
+    
 }
 @media (min-width: $sz4){// 768px
+    // hiding fixed mobile nav
+    #mobileNav{
+        pointer-events: none;
+        display: none;
+    }
 
+    // redisplay top nav links
+    .navbarContent{
+        padding:0.8rem 1.5rem;
+        .linksContent{
+            display: flex;
+        }
+    }
+    
+    // make main navbar fixed to top of screen
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 @media (min-width: $sz5){// 992px
 
@@ -21,7 +46,9 @@
 
 }
 @media (min-width: $sz8){// 1400px
-    
+    .navbarContent{
+        padding: 1rem 0;
+    }
 }
 
 

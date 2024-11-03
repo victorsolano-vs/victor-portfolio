@@ -64,6 +64,17 @@ a{
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    max-width: 31.25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    // apply hover effect on mobile nav
+    li{
+        transition: opacity 0.4s ease;
+    }
+    &:hover > :not(:hover){
+        opacity: 0.55;
+    }
 }
 
 @mixin frostedBackground{
