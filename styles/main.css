@@ -40,7 +40,7 @@ a {
   transition: transform 0.5s ease;
 }
 .navbarContent .logo:hover {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 .navbarContent .linksContent {
   display: none;
@@ -76,20 +76,21 @@ a {
 .mobileLinksContent {
   display: flex;
   list-style: none;
-  border-top: 1px solid #1e1e1f;
-  padding: 0.8rem 1.5rem;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid #1e1e1f;
+  padding: 0.8rem 1.5rem;
 }
 .mobileLinksContent li {
   transition: opacity 0.4s ease;
 }
+.mobileLinksContent:hover > :not(:hover) {
+  opacity: 0.55;
+}
 .mobileLinksContent .navLink {
   color: white;
   padding: 1rem;
-}
-.mobileLinksContent:hover > :not(:hover) {
-  opacity: 0.65;
+  font-size: 0.875rem;
 }
 
 html {

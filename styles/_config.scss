@@ -3,7 +3,7 @@
 // google fonts api poppins
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+// color variables
 $background-color: #121212;
 $accent-color:  #1e1e1f;
 $form-background-color: #1e1e1f;
@@ -17,6 +17,24 @@ $hover-text-color: #ffff;
 
 $text-color: #d6d6d6;
 $text-heading-color: #ffff;
+
+// media queries
+$sz1: 20rem;
+$sz2: 30rem;
+$sz3: 36rem;
+$sz4: 48rem;
+$sz5: 62rem;
+$sz6: 64rem;
+$sz7: 75rem;
+$sz8: 87.5rem;
+
+// font size variables
+//11
+//12
+//14
+//15
+//16
+
 
 *{
     box-sizing: border-box;
@@ -37,4 +55,12 @@ body{
 
 a{
     text-decoration: none;
+}
+
+// common code for navbar
+@mixin horizontalList{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
 }
