@@ -13,29 +13,34 @@
     --button-color: #ffff;
     --button-text-color: #1e1e1f;
     
-    --hover-color: #ffff;
-    --hover-text-color: #ffff;
+    // --hover-color: #ffff;
+    // --hover-text-color: #ffff;
     
     --text-color: #d6d6d6;
+    --tag-text-color: #d6d6d6;
     --text-heading-color: #ffff;
 }
 
 
 [data-theme = 'light']{
-    --background-color: #c529b8;
-    --accent-color:  #1e1e1f;
-    --form-background-color: #1e1e1f;
+    --background-color: #ffff;
+    --accent-color:  #f3f3f3;
+    --form-background-color: #f3f3f3;
     
-    --tag-color: #1e1e1f;
-    --button-color: #ffff;
-    --button-text-color: #1e1e1f;
+    --tag-color: #f3f3f3;
+    --button-color: #121212;
+    --button-text-color: #ffffff;
     
-    --hover-color: #ffff;
-    --hover-text-color: #ffff;
+    // --hover-color: #121212;
+    // --hover-text-color: #ffff;
     
     --text-color: #d6d6d6;
-    --text-heading-color: #ffff;
+    --text-heading-color: #121212;
+    --tag-text-color: #ffff;
 }
+
+// transition duration for theme change
+$transition-duration: 0.3s;
 
 // media queries
 $sz1: 20rem;
@@ -64,6 +69,7 @@ $xxlg: 2.813rem; //45px
 }
 body{
     background: var(--background-color);
+    transition: background $transition-duration ease;
 }
 
 .siteContainer{

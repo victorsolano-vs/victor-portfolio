@@ -6,23 +6,21 @@
   --tag-color: #1e1e1f;
   --button-color: #ffff;
   --button-text-color: #1e1e1f;
-  --hover-color: #ffff;
-  --hover-text-color: #ffff;
   --text-color: #d6d6d6;
+  --tag-text-color: #d6d6d6;
   --text-heading-color: #ffff;
 }
 
 [data-theme=light] {
-  --background-color: #c529b8;
-  --accent-color: #1e1e1f;
-  --form-background-color: #1e1e1f;
-  --tag-color: #1e1e1f;
-  --button-color: #ffff;
-  --button-text-color: #1e1e1f;
-  --hover-color: #ffff;
-  --hover-text-color: #ffff;
+  --background-color: #ffff;
+  --accent-color: #f3f3f3;
+  --form-background-color: #f3f3f3;
+  --tag-color: #f3f3f3;
+  --button-color: #121212;
+  --button-text-color: #ffffff;
   --text-color: #d6d6d6;
-  --text-heading-color: #ffff;
+  --text-heading-color: #121212;
+  --tag-text-color: #ffff;
 }
 
 * {
@@ -34,6 +32,7 @@
 
 body {
   background: var(--background-color);
+  transition: background 0.3s ease;
 }
 
 .siteContainer {
@@ -63,7 +62,7 @@ a {
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: var(--text-heading-color);
-  transition: transform 0.5s ease;
+  transition: color, transform 0.3s ease;
 }
 .navbarContent .logo:hover {
   transform: scale(0.9);
@@ -89,6 +88,7 @@ a {
 .navbarContent .linksContent a {
   color: var(--text-heading-color);
   font-size: 0.875rem;
+  transition: color 0.3s ease;
 }
 .navbarContent #themeToggle {
   outline: none;
