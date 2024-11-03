@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-nav {
+.navbar {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -63,4 +63,35 @@ nav {
 }
 .sun-svg path {
   stroke: white;
+}
+
+#mobileNav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.mobileLinksContent {
+  display: flex;
+  list-style: none;
+  border-top: 1px solid #1e1e1f;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobileLinksContent li {
+  transition: opacity 0.4s ease;
+}
+.mobileLinksContent .navLink {
+  color: white;
+  padding: 1rem;
+}
+.mobileLinksContent:hover > :not(:hover) {
+  opacity: 0.65;
+}
+
+html {
+  margin-bottom: 1000px;
 }
