@@ -18,8 +18,7 @@
         font-weight: 600;
         letter-spacing: 0.1rem;
         color: var(--text-heading-color);
-        // transition: transform 0.5s ease;
-        transition: color, transform $transition-duration ease;
+        transition: color $transition-duration ease, transform 0.5s ease;
 
         &:hover{
             transform: scale(0.9);
@@ -84,6 +83,12 @@
     }
 }
 
+
+
+// main section styles
+#mainSection{
+    background: red;
+}
 
 
 
