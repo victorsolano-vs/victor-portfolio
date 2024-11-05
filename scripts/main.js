@@ -11,11 +11,26 @@ body.setAttribute('data-theme', savedTheme)
 
 // toggle theme and save to local storage
 themeToggleBtn.addEventListener('click', () => {
-    console.log('hi')
     const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light'
 
     body.setAttribute('data-theme', newTheme)
     localStorage.setItem('theme', newTheme)
+})
+
+
+
+// js code to render my languages
+const stackContainer = document.querySelector('.rightSectionContent')
+
+let stackHTML = ''
+
+myStack.forEach((stack) => {
+    stackHTML += `
+    <div class = 'langCard ${stack.languageName}Card'>
+        <img src='${stack.languageLogo}'>
+    </div>
+    `
+    stackContainer.innerHTML = stackHTML
 })
 
 

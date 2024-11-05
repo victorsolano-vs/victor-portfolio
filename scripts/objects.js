@@ -10,10 +10,10 @@ export const myStack = [{
 },
 {
     languageName: 'Figma',
-    languageLogo:'./assets/images/javascript.svg'
+    languageLogo:'./assets/images/figma.svg'
 },
 {
-    languageName: 'Microsoft Dynamics',
+    languageName: 'Dynamics',
     languageLogo:'./assets/images/microsoft.svg'
 },
 {
@@ -35,5 +35,5 @@ export const myStack = [{
     languageLogo: './assets/images/java.svg'
 },{
     languageName: 'SQL',
-    languageLogo: './assets/images/sql.svg'
+    languageLogo: './assets/images/mysql.svg'
 }]

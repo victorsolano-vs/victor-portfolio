@@ -87,11 +87,12 @@
 // main section styles
 #mainSection{
     margin-top: 0;
+    padding: 0 1.5rem;
 }
 
+// left section
 .leftSectionContent{
-    margin: 1.5rem;
-
+    
     .title{
         font-size: $xxlg;
         color: var(--text-heading-color);
@@ -113,6 +114,7 @@
             }
         }
         p{
+            margin-left: 3px;
             display: inline;
             font-size: $sm;
             color: var(--text-color);
@@ -170,6 +172,42 @@
         }
     }
 }
+
+
+// right section
+.rightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightSectionContent{
+    display: grid;
+    gap: 1rem; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr);
+
+    // max-width: 450px;
+    // margin-left: auto;
+    // margin-right: auto;
+    background-color: aliceblue;
+
+    .langCard{
+        background: var(--accent-color);
+        border-radius: 10px;
+
+        padding: 2rem 2.5rem;
+        width: min-content;
+        min-width: 120px;
+        max-height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 35px;
+        }
+    }
+}
+
 
 
 // placeholder to allow page to scroll

@@ -141,11 +141,9 @@ a {
 
 #mainSection {
   margin-top: 0;
+  padding: 0 1.5rem;
 }
 
-.leftSectionContent {
-  margin: 1.5rem;
-}
 .leftSectionContent .title {
   font-size: 2.813rem;
   color: var(--text-heading-color);
@@ -166,6 +164,7 @@ a {
   transition: stroke 0.4s ease;
 }
 .leftSectionContent .location p {
+  margin-left: 3px;
   display: inline;
   font-size: 0.75rem;
   color: var(--text-color);
@@ -220,6 +219,33 @@ a {
 }
 .leftSectionContent .viewProjectsCTA:hover svg {
   transform: rotate(0);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSectionContent {
+  display: grid;
+  gap: 1rem; /* Space between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  background-color: aliceblue;
+}
+.rightSectionContent .langCard {
+  background: var(--accent-color);
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  width: min-content;
+  min-width: 120px;
+  max-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightSectionContent .langCard img {
+  width: 35px;
 }
 
 html {
