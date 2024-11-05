@@ -87,9 +87,90 @@
 
 // main section styles
 #mainSection{
-    background: red;
+    margin-top: 0;
+    // background-color: red;
 }
 
+.leftSectionContent{
+    // background-color: blue;
+    margin: 1.5rem;
+
+    .title{
+        font-size: $xxlg;
+        color: var(--text-heading-color);
+        font-weight: 600;
+    }
+
+    .location{
+        display: flex;
+        // background-color: red;
+
+        svg{
+            width: 17px;
+            height: 17px;
+            path{
+                stroke: var(--text-color);
+            }
+        }
+        p{
+            display: inline;
+            font-size: $sm;
+            color: var(--text-color);
+        }
+    }
+
+    .skillTags{
+        color: var(--tag-text-color);
+        display: flex;
+        font-size: $sm;
+
+        .tag{
+            background: yellow;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: var(--accent-color);
+            &:nth-child(1){
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .aboutMeText{
+        color: var(--text-color);
+        font-size: $md;
+    }
+
+    .viewProjectsCTA{
+        background: var(--button-color);
+        color: var(--button-text-color);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        display: inline-flex;
+        align-items: center;
+        font-size: $md;
+        transition: transform 0.3s ease;
+
+        svg{
+            transform: rotate(-40deg);
+            margin-left: 0.5rem;
+            width: 19px;
+            height: 19px;
+            transition: transform 0.3s ease;
+
+            
+            path{
+                stroke: var(--button-text-color);
+            }
+        }
+
+        &:hover{
+            transform: scale(0.9);
+            svg{
+                transform: rotate(0);
+            }
+        }
+    }
+}
 
 
 // placeholder to allow page to scroll

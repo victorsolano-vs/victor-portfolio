@@ -2,25 +2,21 @@
 :root {
   --background-color: #121212;
   --accent-color: #1e1e1f;
-  --form-background-color: #1e1e1f;
-  --tag-color: #1e1e1f;
   --button-color: #ffff;
   --button-text-color: #1e1e1f;
   --text-color: #d6d6d6;
-  --tag-text-color: #d6d6d6;
+  --tag-text-color: #ffffff;
   --text-heading-color: #ffff;
 }
 
 [data-theme=light] {
   --background-color: #ffff;
   --accent-color: #f3f3f3;
-  --form-background-color: #f3f3f3;
-  --tag-color: #f3f3f3;
   --button-color: #121212;
   --button-text-color: #ffffff;
-  --text-color: #d6d6d6;
+  --text-color: #121212;
+  --tag-text-color: #121212;
   --text-heading-color: #121212;
-  --tag-text-color: #ffff;
 }
 
 * {
@@ -144,7 +140,75 @@ a {
 }
 
 #mainSection {
-  background: red;
+  margin-top: 0;
+}
+
+.leftSectionContent {
+  margin: 1.5rem;
+}
+.leftSectionContent .title {
+  font-size: 2.813rem;
+  color: var(--text-heading-color);
+  font-weight: 600;
+}
+.leftSectionContent .location {
+  display: flex;
+}
+.leftSectionContent .location svg {
+  width: 17px;
+  height: 17px;
+}
+.leftSectionContent .location svg path {
+  stroke: var(--text-color);
+}
+.leftSectionContent .location p {
+  display: inline;
+  font-size: 0.75rem;
+  color: var(--text-color);
+}
+.leftSectionContent .skillTags {
+  color: var(--tag-text-color);
+  display: flex;
+  font-size: 0.75rem;
+}
+.leftSectionContent .skillTags .tag {
+  background: yellow;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: var(--accent-color);
+}
+.leftSectionContent .skillTags .tag:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.leftSectionContent .aboutMeText {
+  color: var(--text-color);
+  font-size: 0.875rem;
+}
+.leftSectionContent .viewProjectsCTA {
+  background: var(--button-color);
+  color: var(--button-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  transition: transform 0.3s ease;
+}
+.leftSectionContent .viewProjectsCTA svg {
+  transform: rotate(-40deg);
+  margin-left: 0.5rem;
+  width: 19px;
+  height: 19px;
+  transition: transform 0.3s ease;
+}
+.leftSectionContent .viewProjectsCTA svg path {
+  stroke: var(--button-text-color);
+}
+.leftSectionContent .viewProjectsCTA:hover {
+  transform: scale(0.9);
+}
+.leftSectionContent .viewProjectsCTA:hover svg {
+  transform: rotate(0);
 }
 
 html {
@@ -168,6 +232,9 @@ html {
     width: 100%;
     top: 0;
     left: 0;
+  }
+  #mainSection {
+    margin-top: 3.188rem;
   }
 }
 @media (min-width: 87.5rem) {

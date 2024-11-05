@@ -5,38 +5,28 @@
 
 // color variables (using css vairables for colors since it has to be dynamically changed in JS.
 :root{
-    --background-color: #121212;
-    --accent-color:  #1e1e1f;
-    --form-background-color: #1e1e1f;
+    --background-color: #121212; //background for body
+    --accent-color:  #1e1e1f; //background color for tags, lang card bg, form input bg
     
-    --tag-color: #1e1e1f;
-    --button-color: #ffff;
-    --button-text-color: #1e1e1f;
+    --button-color: #ffff; //bg for CTAs
+    --button-text-color: #1e1e1f; //text color for CTAs
     
-    // --hover-color: #ffff;
-    // --hover-text-color: #ffff;
-    
-    --text-color: #d6d6d6;
-    --tag-text-color: #d6d6d6;
-    --text-heading-color: #ffff;
+    --text-color: #d6d6d6; //piece of regular text
+    --tag-text-color: #ffffff; //text color for tag
+    --text-heading-color: #ffff; //text color for headings
 }
 
 
 [data-theme = 'light']{
     --background-color: #ffff;
     --accent-color:  #f3f3f3;
-    --form-background-color: #f3f3f3;
     
-    --tag-color: #f3f3f3;
     --button-color: #121212;
     --button-text-color: #ffffff;
     
-    // --hover-color: #121212;
-    // --hover-text-color: #ffff;
-    
-    --text-color: #d6d6d6;
+    --text-color: #121212;
+    --tag-text-color: #121212;
     --text-heading-color: #121212;
-    --tag-text-color: #ffff;
 }
 
 // transition duration for theme change
