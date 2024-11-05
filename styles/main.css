@@ -150,9 +150,12 @@ a {
   font-size: 2.813rem;
   color: var(--text-heading-color);
   font-weight: 600;
+  transition: color 0.4s ease;
 }
 .leftSectionContent .location {
   display: flex;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 .leftSectionContent .location svg {
   width: 17px;
@@ -160,29 +163,35 @@ a {
 }
 .leftSectionContent .location svg path {
   stroke: var(--text-color);
+  transition: stroke 0.4s ease;
 }
 .leftSectionContent .location p {
   display: inline;
   font-size: 0.75rem;
   color: var(--text-color);
+  transition: color 0.4s ease;
 }
 .leftSectionContent .skillTags {
   color: var(--tag-text-color);
+  transition: color 0.4s ease;
   display: flex;
   font-size: 0.75rem;
+  margin-bottom: 20px;
 }
 .leftSectionContent .skillTags .tag {
-  background: yellow;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   background: var(--accent-color);
+  transition: background 0.4s ease;
 }
 .leftSectionContent .skillTags .tag:nth-child(1) {
   margin-right: 0.5rem;
 }
 .leftSectionContent .aboutMeText {
   color: var(--text-color);
+  transition: color 0.4s ease;
   font-size: 0.875rem;
+  max-width: 500px;
 }
 .leftSectionContent .viewProjectsCTA {
   background: var(--button-color);
@@ -192,7 +201,8 @@ a {
   display: inline-flex;
   align-items: center;
   font-size: 0.875rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.4s ease, background 0.4s ease;
+  margin-top: 25px;
 }
 .leftSectionContent .viewProjectsCTA svg {
   transform: rotate(-40deg);
@@ -203,6 +213,7 @@ a {
 }
 .leftSectionContent .viewProjectsCTA svg path {
   stroke: var(--button-text-color);
+  transition: transform 0.4s ease;
 }
 .leftSectionContent .viewProjectsCTA:hover {
   transform: scale(0.9);

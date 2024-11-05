@@ -84,51 +84,54 @@
 }
 
 
-
 // main section styles
 #mainSection{
     margin-top: 0;
-    // background-color: red;
 }
 
 .leftSectionContent{
-    // background-color: blue;
     margin: 1.5rem;
 
     .title{
         font-size: $xxlg;
         color: var(--text-heading-color);
         font-weight: 600;
+        transition: color $transition-duration ease;
     }
 
     .location{
         display: flex;
         // background-color: red;
-
+        margin-top: -10px;
+        margin-bottom: 10px;
         svg{
             width: 17px;
             height: 17px;
             path{
                 stroke: var(--text-color);
+                transition: stroke $transition-duration ease;
             }
         }
         p{
             display: inline;
             font-size: $sm;
             color: var(--text-color);
+            transition: color $transition-duration ease;
         }
     }
 
     .skillTags{
         color: var(--tag-text-color);
+        transition: color $transition-duration ease;
         display: flex;
         font-size: $sm;
+        margin-bottom: 20px;
 
         .tag{
-            background: yellow;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             background: var(--accent-color);
+            transition: background $transition-duration ease;
             &:nth-child(1){
                 margin-right: 0.5rem;
             }
@@ -137,19 +140,14 @@
 
     .aboutMeText{
         color: var(--text-color);
+        transition: color $transition-duration ease;
         font-size: $md;
+        max-width: 500px
     }
 
     .viewProjectsCTA{
-        background: var(--button-color);
-        color: var(--button-text-color);
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        display: inline-flex;
-        align-items: center;
-        font-size: $md;
-        transition: transform 0.3s ease;
-
+        @include buttonStyles;
+        margin-top: 25px;
         svg{
             transform: rotate(-40deg);
             margin-left: 0.5rem;
@@ -160,6 +158,7 @@
             
             path{
                 stroke: var(--button-text-color);
+                transition: transform $transition-duration ease;
             }
         }
 

@@ -95,3 +95,14 @@ a{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+@mixin buttonStyles{
+    background: var(--button-color);
+    color: var(--button-text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-size: $md;
+    transition: transform 0.3s ease, color $transition-duration ease, background $transition-duration ease;
+}
