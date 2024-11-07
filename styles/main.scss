@@ -81,7 +81,7 @@
     .navLink{
         color: var(--text-heading-color);
         // padding: 1rem; //changed
-        font-size: $sm; //changed
+        //font-size: $sm; //changed
         font-size: var(--linksFontSize);
     }
 }
@@ -151,7 +151,7 @@
     .viewProjectsCTA{
         @include buttonStyles;
         margin-top: 25px;
-        
+
         svg{
             transform: rotate(-40deg);
             margin-left: 0.5rem;
@@ -211,15 +211,4 @@
     }
 }
 
-
-
-// placeholder to allow page to scroll
-// html{
-//     margin-bottom: 1000px
-// }
-
 @import 'responsive';
-
-
-
-// starting at 320 px now
