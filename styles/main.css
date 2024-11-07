@@ -268,6 +268,9 @@ a {
 }
 
 @media (min-width: 22.5rem) {
+  :root {
+    --linksFontSize: 14px;
+  }
   .rightSectionContent {
     grid-template-columns: repeat(3, 1fr);
   }

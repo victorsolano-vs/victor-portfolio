@@ -1,6 +1,8 @@
 // holds all media queries
 @media (min-width: $sz1){// 360px
-
+    :root{
+        --linksFontSize: 14px;
+    }
     .rightSectionContent{
         grid-template-columns: repeat(3, 1fr);
     }
