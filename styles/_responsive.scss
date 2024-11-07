@@ -50,6 +50,9 @@
 
 }
 @media (min-width: $sz7){// 1200px
+    :root{
+        --test: 80px;
+    }
 
 }
 @media (min-width: $sz8){// 1400px

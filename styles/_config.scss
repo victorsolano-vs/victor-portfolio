@@ -14,6 +14,14 @@
     --text-color: #d6d6d6; //piece of regular text
     --tag-text-color: #ffffff; //text color for tag
     --text-heading-color: #ffff; //text color for headings
+
+    --headingFontSize: 2.188rem; //35px initial value
+    --blockTextFontSize: 0.75rem; //12 px
+    --tagFontSize: 0.75rem; //12px
+    --logoFontSize: 1rem; //16px
+    --subHeadingFontSize: 1.25rem; //20px
+    --linksFontSize: 0.75rem; //12px
+    --buttonFontSize: 0.75rem; //12px
 }
 
 
@@ -41,15 +49,6 @@ $sz5: 62rem;
 $sz6: 64rem;
 $sz7: 75rem;
 $sz8: 87.5rem;
-
-// font size variables
-$sm: 0.75rem; //12px
-$md: 0.875rem; //14px
-$lg: 0.938rem;//15px
-$xlg:1.25rem; //20px
-$xxlg: 2.813rem; //45px
-
-
 
 *{
     box-sizing: border-box;
@@ -103,6 +102,6 @@ a{
     border-radius: 20px;
     display: inline-flex;
     align-items: center;
-    font-size: $md;
+    font-size: var(--buttonFontSize);
     transition: transform 0.3s ease, color $transition-duration ease, background $transition-duration ease;
 }

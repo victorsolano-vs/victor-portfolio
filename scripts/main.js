@@ -44,3 +44,6 @@ myStack.forEach((stack) => {
 // })
 
 // document.querySelector('#mainSection').innerHTML = testHTML
+
+
+// MAKE THE MIN 340 SO ADJUST SIZES

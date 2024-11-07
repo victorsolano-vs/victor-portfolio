@@ -14,7 +14,7 @@
 
     .logo{
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: var(--logoFontSize);
         font-weight: 600;
         letter-spacing: 0.1rem;
         color: var(--text-heading-color);
@@ -32,7 +32,8 @@
         flex-grow: 0.3;
             a{
                 color: var(--text-heading-color);
-                font-size: $md;
+                // font-size: $md; //changed
+                font-size: var(--linksFontSize);
                 transition: color $transition-duration ease;
             }
     }
@@ -67,6 +68,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    max-width: 100vw;
     z-index: 99;
     border-top: 1px solid var(--accent-color);
     @include frostedBackground;
@@ -78,8 +80,9 @@
 
     .navLink{
         color: var(--text-heading-color);
-        padding: 1rem;
-        font-size: $md;
+        // padding: 1rem; //changed
+        font-size: $sm; //changed
+        font-size: var(--linksFontSize);
     }
 }
 
@@ -92,9 +95,8 @@
 
 // left section
 .leftSectionContent{
-    
     .title{
-        font-size: $xxlg;
+        font-size: var(--headingFontSize);
         color: var(--text-heading-color);
         font-weight: 600;
         transition: color $transition-duration ease;
@@ -102,7 +104,6 @@
 
     .location{
         display: flex;
-        // background-color: red;
         margin-top: -10px;
         margin-bottom: 10px;
         svg{
@@ -116,7 +117,7 @@
         p{
             margin-left: 3px;
             display: inline;
-            font-size: $sm;
+            font-size: var(--tagFontSize);
             color: var(--text-color);
             transition: color $transition-duration ease;
         }
@@ -126,7 +127,7 @@
         color: var(--tag-text-color);
         transition: color $transition-duration ease;
         display: flex;
-        font-size: $sm;
+        font-size: var(--tagFontSize);
         margin-bottom: 20px;
 
         .tag{
@@ -143,20 +144,20 @@
     .aboutMeText{
         color: var(--text-color);
         transition: color $transition-duration ease;
-        font-size: $md;
+        font-size: var(--blockTextFontSize);
         max-width: 500px
     }
 
     .viewProjectsCTA{
         @include buttonStyles;
         margin-top: 25px;
+        
         svg{
             transform: rotate(-40deg);
             margin-left: 0.5rem;
             width: 19px;
             height: 19px;
             transition: transform 0.3s ease;
-
             
             path{
                 stroke: var(--button-text-color);
@@ -183,6 +184,7 @@
 .rightSectionContent{
     display: grid;
     gap: 0.5rem; /* Space between grid items */
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
 
     margin-top: 2.5rem;
@@ -212,8 +214,12 @@
 
 
 // placeholder to allow page to scroll
-html{
-    margin-bottom: 1000px
-}
+// html{
+//     margin-bottom: 1000px
+// }
 
 @import 'responsive';
+
+
+
+// starting at 320 px now
