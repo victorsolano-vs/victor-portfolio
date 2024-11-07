@@ -186,14 +186,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    margin-top: 4rem;
 }
+
+.myStackTitle{
+    color: var(--tag-text-color);
+    margin-bottom: 1rem;
+    p{
+        font-size: var(--subHeadingFontSize);
+        font-family: "Homemade Apple", serif;
+    }
+}
+
+
 .rightSectionContent{
     display: grid;
     gap: 0.5rem; /* Space between grid items */
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-
-    margin-top: 2.5rem;
 
     // max-width: 450px;
     // margin-left: auto;

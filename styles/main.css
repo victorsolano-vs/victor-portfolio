@@ -232,6 +232,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.myStackTitle {
+  color: var(--tag-text-color);
+  margin-bottom: 1rem;
+}
+.myStackTitle p {
+  font-size: var(--subHeadingFontSize);
+  font-family: "Homemade Apple", serif;
 }
 
 .rightSectionContent {
@@ -239,7 +250,6 @@ a {
   gap: 0.5rem; /* Space between grid items */
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 2.5rem;
 }
 .rightSectionContent .langCard {
   background: var(--accent-color);
@@ -257,6 +267,11 @@ a {
   height: 40px;
 }
 
+@media (min-width: 22.5rem) {
+  .rightSectionContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (min-width: 48rem) {
   #mobileNav {
     pointer-events: none;

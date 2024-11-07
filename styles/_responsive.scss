@@ -1,5 +1,9 @@
 // holds all media queries
-@media (min-width: $sz1){// 320px
+@media (min-width: $sz1){// 360px
+
+    .rightSectionContent{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 @media (min-width: $sz2){// 480px
