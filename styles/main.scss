@@ -81,8 +81,6 @@
 
     .navLink{
         color: var(--text-heading-color);
-        // padding: 1rem; //changed
-        //font-size: $sm; //changed
         font-size: var(--linksFontSize);
     }
 }
@@ -90,8 +88,10 @@
 
 // main section styles
 #mainSection{
-    margin-top: 1.875rem;
+    min-height: 100vh;
+    
     padding: 0 1.5rem;
+    padding-top: 1.875rem;
 }
 
 // left section
@@ -149,7 +149,7 @@
         color: var(--text-color);
         transition: color $transition-duration ease;
         font-size: var(--blockTextFontSize);
-        max-width: 500px
+        max-width: 350px;
     }
 
     .viewProjectsCTA{
@@ -167,7 +167,7 @@
             
             path{
                 stroke: var(--button-text-color);
-                transition: transform $transition-duration ease;
+                transition: transform $transition-duration ease, stroke $transition-duration ease;
             }
         }
 
@@ -194,39 +194,43 @@
 .myStackTitle{
     color: var(--tag-text-color);
     margin-bottom: 1rem;
+    transition: color $transition-duration ease;
+
+
     p{
         font-size: var(--subHeadingFontSize);
         font-family: "Homemade Apple", serif;
+    }
+    svg{
+        display: none;
+        fill: var(--text-heading-color);
+        transition: fill $transition-duration ease;
     }
 }
 
 
 .rightSectionContent{
     display: grid;
-    gap: 0.5rem; /* Space between grid items */
+    gap: 0.5rem;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-
-    // max-width: 450px;
-    // margin-left: auto;
-    // margin-right: auto;
 
     .langCard{
         background: var(--accent-color);
         border-radius: 10px;
 
-        // padding: 2rem 2.5rem;
         padding: 1rem 1.5rem;
 
 
         width: min-content;
-        // min-width: 120px;
         min-width: 100px;
         max-height: 90px;
 
         display: flex;
         align-items: center;
         justify-content: center;
+
+        transition: background $transition-duration ease;
         img{
             width: 35px;
             height: 40px
@@ -234,4 +238,7 @@
     }
 }
 
+html{
+    padding-bottom: 10000px
+}
 @import 'responsive';

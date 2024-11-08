@@ -1,8 +1,35 @@
 // holds all media queries
 @media (min-width: $sz1){// 360px
     :root{
-        --linksFontSize: 14px;
+        --headingFontSize: 2.5rem; //40px
+        --blockTextFontSize: 0.875rem; //14 px
+        --tagFontSize: 0.75rem; //12px
+
+        --linksFontSize: 0.875rem; //14px
+        --buttonFontSize: 0.875rem; //14px
+
+        
+        --subHeadingFontSize: 1.25rem; //20px
     }
+
+    .leftSectionContent{
+        .location{
+            svg{
+                $svgSize: 16px;
+                width: $svgSize;
+                height: $svgSize;
+            }
+        }
+
+        .viewProjectsCTA{
+            svg{
+                $svgSize: 19px;
+                width: $svgSize;
+                height: $svgSize;
+            }
+        }
+    }
+
     .rightSectionContent{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -44,22 +71,75 @@
     }
 
 
-    // main Section
+    // main Section turn to row layout for bigger screen
     #mainSection{
-        margin-top: 3.188rem;
+        // margin-top: 3.188rem;
+        padding-top: 10rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .leftSection{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection{
+        position: relative;
+        flex:1;
+        justify-content: center;
+        margin-top: 0;
     }
 }
 @media (min-width: $sz5){// 992px
 
+
+    .rightSection{
+        flex-direction: row;
+    }
+
+    .myStackTitle{
+        position: absolute;
+        margin-right: 300px;
+        bottom: -5em;
+        display: flex;
+        svg{
+            margin-left: 10px;
+            margin-top: -10px;
+            display: block;
+            transform: rotate(-75deg);
+        }
+    }
 }
 @media (min-width: $sz6){// 1024px
 
 }
 @media (min-width: $sz7){// 1200px
     :root{
-        --test: 80px;
+        --headingFontSize: 2.8125rem; //40px
+        --blockTextFontSize: 0.875rem; //14 px
+        --tagFontSize: 0.75rem; //12px
+
+        --linksFontSize: 0.875rem; //14px
+        --buttonFontSize: 0.875rem; //14px
+
+        
+        --subHeadingFontSize: 1.25rem; //20px
+    }
+    .leftSectionContent{
+        .aboutMeText{
+            max-width: 400px;
+        }
     }
 
+    .rightSectionContent{
+        .langCard{
+            padding: 2rem 2.5rem;
+            min-width: 120px;
+        }
+    }
 }
 @media (min-width: $sz8){// 1400px
     .navbarContent{

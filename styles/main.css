@@ -147,8 +147,9 @@ a {
 }
 
 #mainSection {
-  margin-top: 1.875rem;
+  min-height: 100vh;
   padding: 0 1.5rem;
+  padding-top: 1.875rem;
 }
 
 .leftSectionContent .title {
@@ -197,7 +198,7 @@ a {
   color: var(--text-color);
   transition: color 0.4s ease;
   font-size: var(--blockTextFontSize);
-  max-width: 500px;
+  max-width: 350px;
 }
 .leftSectionContent .viewProjectsCTA {
   background: var(--button-color);
@@ -219,7 +220,7 @@ a {
 }
 .leftSectionContent .viewProjectsCTA svg path {
   stroke: var(--button-text-color);
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, stroke 0.4s ease;
 }
 .leftSectionContent .viewProjectsCTA:hover {
   transform: scale(0.9);
@@ -239,15 +240,21 @@ a {
 .myStackTitle {
   color: var(--tag-text-color);
   margin-bottom: 1rem;
+  transition: color 0.4s ease;
 }
 .myStackTitle p {
   font-size: var(--subHeadingFontSize);
   font-family: "Homemade Apple", serif;
 }
+.myStackTitle svg {
+  display: none;
+  fill: var(--text-heading-color);
+  transition: fill 0.4s ease;
+}
 
 .rightSectionContent {
   display: grid;
-  gap: 0.5rem; /* Space between grid items */
+  gap: 0.5rem;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -261,15 +268,33 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.4s ease;
 }
 .rightSectionContent .langCard img {
   width: 35px;
   height: 40px;
 }
 
+html {
+  padding-bottom: 10000px;
+}
+
 @media (min-width: 22.5rem) {
   :root {
-    --linksFontSize: 14px;
+    --headingFontSize: 2.5rem;
+    --blockTextFontSize: 0.875rem;
+    --tagFontSize: 0.75rem;
+    --linksFontSize: 0.875rem;
+    --buttonFontSize: 0.875rem;
+    --subHeadingFontSize: 1.25rem;
+  }
+  .leftSectionContent .location svg {
+    width: 16px;
+    height: 16px;
+  }
+  .leftSectionContent .viewProjectsCTA svg {
+    width: 19px;
+    height: 19px;
   }
   .rightSectionContent {
     grid-template-columns: repeat(3, 1fr);
@@ -294,12 +319,55 @@ a {
     left: 0;
   }
   #mainSection {
-    margin-top: 3.188rem;
+    padding-top: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .leftSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .rightSection {
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+@media (min-width: 62rem) {
+  .rightSection {
+    flex-direction: row;
+  }
+  .myStackTitle {
+    position: absolute;
+    margin-right: 300px;
+    bottom: -5em;
+    display: flex;
+  }
+  .myStackTitle svg {
+    margin-left: 10px;
+    margin-top: -10px;
+    display: block;
+    transform: rotate(-75deg);
   }
 }
 @media (min-width: 75rem) {
   :root {
-    --test: 80px;
+    --headingFontSize: 2.8125rem;
+    --blockTextFontSize: 0.875rem;
+    --tagFontSize: 0.75rem;
+    --linksFontSize: 0.875rem;
+    --buttonFontSize: 0.875rem;
+    --subHeadingFontSize: 1.25rem;
+  }
+  .leftSectionContent .aboutMeText {
+    max-width: 400px;
+  }
+  .rightSectionContent .langCard {
+    padding: 2rem 2.5rem;
+    min-width: 120px;
   }
 }
 @media (min-width: 87.5rem) {
