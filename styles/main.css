@@ -344,6 +344,7 @@ a {
   text-wrap: nowrap;
   opacity: 0.35;
   color: var(--accent-color);
+  transition: color 0.4s ease;
 }
 
 html {
