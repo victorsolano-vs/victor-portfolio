@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Move Text Effect</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #282c34;
+      color: #fff;
+    }
+
+    /* Centered text */
+    .moving-text {
+      font-size: 3em;
+      font-weight: bold;
+      transition: transform 0.05s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moving-text">Move Your Mouse!</div>
+
+  <script>
+    // Select the text element
+    const movingText = document.querySelector('.moving-text');
+
+    // Track mouse movement and apply transformation
+    document.addEventListener('mousemove', (event) => {
+      // Calculate position relative to center of the screen
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+
+      // Calculate how far the mouse is from the center
+      const deltaX = (event.clientX - centerX) / 20;
+      const deltaY = (event.clientY - centerY) / 20;
+
+      // Apply transform to move text based on mouse position
+      movingText.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    });
+  </script>
+
+</body>
+</html>

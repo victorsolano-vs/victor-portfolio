@@ -114,6 +114,8 @@
 }
 @media (min-width: $sz5){// 992px
 
+    
+
 
     .rightSection{
         flex-direction: row;
@@ -131,13 +133,24 @@
             transform: rotate(-75deg);
         }
     }
+
+
+
+    .watermark{
+        top: 14rem;
+        left: -5rem;
+        .text{
+            font-size: 100px;
+        }
+    }
+    
 }
 @media (min-width: $sz6){// 1024px
 
 }
 @media (min-width: $sz7){// 1200px
     :root{
-        --headingFontSize: 2.8125rem; //40px
+        --headingFontSize: 2.8125rem; //45px
         --blockTextFontSize: 0.875rem; //14 px
         --tagFontSize: 0.75rem; //12px
 
@@ -159,8 +172,27 @@
             min-width: 120px;
         }
     }
+
+    #mainSection{
+        padding-top: 12rem;
+    }
+
+    .watermark{
+        top: 18rem;
+        left: -8rem;
+        .text{
+            font-size: 150px;
+        }
+    }
 }
+
+
+
 @media (min-width: $sz8){// 1400px
+    :root{
+        --headingFontSize: 3.125rem; //50px
+
+    }
     .navbarContent{
         padding: 1rem 0;
     }
