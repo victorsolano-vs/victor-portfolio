@@ -40,7 +40,6 @@ const cards = document.querySelectorAll('.langCard')
 document.addEventListener('mousemove', (event) => {
     textCursor.style.left = `${event.pageX}px`
     textCursor.style.top = `${event.pageY}px`
-    console.log(event.pageX)
 })
 
 cards.forEach((card) => {

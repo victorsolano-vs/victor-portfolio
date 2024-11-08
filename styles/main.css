@@ -75,7 +75,7 @@ a {
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  max-width: 31.25rem;
+  max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
   display: none;
@@ -130,7 +130,7 @@ a {
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  max-width: 31.25rem;
+  max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0.8rem 1.5rem;
@@ -257,7 +257,6 @@ a {
   gap: 0.5rem;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  cursor: none;
 }
 .rightSectionContent .langCard {
   background: var(--accent-color);
@@ -279,8 +278,7 @@ a {
 #textCursor {
   position: absolute;
   pointer-events: none;
-  font-size: 16px;
-  color: black;
+  color: var(--text-heading-color);
   transform: translate(-50%, -50%);
   z-index: 1000;
   display: none;
@@ -309,6 +307,10 @@ html {
   }
   .rightSectionContent {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .mobileLinksContent {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 @media (min-width: 48rem) {
