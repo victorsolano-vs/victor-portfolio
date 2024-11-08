@@ -283,7 +283,6 @@ a {
   gap: 0.5rem;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  cursor: none;
 }
 .rightSectionContent .langCard {
   background: var(--accent-color);
@@ -320,14 +319,6 @@ a {
   width: 80px;
   opacity: 0;
   visibility: hidden;
-}
-
-.show {
-  animation: showCursor 0.3s forwards;
-}
-
-.hide {
-  animation: hideCursor 0.3s forwards;
 }
 
 #langText {
@@ -399,6 +390,15 @@ html {
     flex: 1;
     justify-content: center;
     margin-top: 0;
+  }
+  .rightSectionContent {
+    cursor: none;
+  }
+  .show {
+    animation: showCursor 0.3s forwards;
+  }
+  .hide {
+    animation: hideCursor 0.3s forwards;
   }
 }
 @media (min-width: 62rem) {

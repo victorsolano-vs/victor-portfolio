@@ -96,6 +96,21 @@
         justify-content: center;
         margin-top: 0;
     }
+
+    // adding styles for special hover effect
+    .rightSectionContent{
+        cursor: none;
+    }
+
+    .show {
+        animation: showCursor 0.3s forwards;
+    }
+    
+    .hide{
+        animation: hideCursor 0.3s forwards;
+    }
+
+
 }
 @media (min-width: $sz5){// 992px
 
