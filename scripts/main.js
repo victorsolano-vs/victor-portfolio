@@ -26,24 +26,31 @@ let stackHTML = ''
 
 myStack.forEach((stack) => {
     stackHTML += `
-    <div class = 'langCard ${stack.languageName}Card'>
+    <div data-name = '${stack.languageName}' class = 'langCard ${stack.languageName}Card'>
         <img src='${stack.languageLogo}'>
     </div>
     `
     stackContainer.innerHTML = stackHTML
 })
 
+// add lang name to cursor
+const textCursor = document.getElementById('textCursor')
+const cards = document.querySelectorAll('.langCard')
 
+document.addEventListener('mousemove', (event) => {
+    textCursor.style.left = `${event.pageX}px`
+    textCursor.style.top = `${event.pageY}px`
+    console.log(event.pageX)
+})
 
-// let testHTML = ''
+cards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+        textCursor.textContent = card.getAttribute('data-name')
+        textCursor.style.display = 'block'
+    })
 
-// myStack.forEach((stack) => {
-//     testHTML += `
-//     <p>${stack.languageName}</p>
-//     `
-// })
+    card.addEventListener('mouseleave', () => {
+        textCursor.style.display = 'none'
+    })
 
-// document.querySelector('#mainSection').innerHTML = testHTML
-
-
-// MAKE THE MIN 340 SO ADJUST SIZES
+})

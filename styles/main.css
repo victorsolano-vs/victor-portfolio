@@ -257,6 +257,7 @@ a {
   gap: 0.5rem;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
+  cursor: none;
 }
 .rightSectionContent .langCard {
   background: var(--accent-color);
@@ -273,6 +274,16 @@ a {
 .rightSectionContent .langCard img {
   width: 35px;
   height: 40px;
+}
+
+#textCursor {
+  position: absolute;
+  pointer-events: none;
+  font-size: 16px;
+  color: black;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
 }
 
 html {
