@@ -33,23 +33,49 @@ myStack.forEach((stack) => {
     stackContainer.innerHTML = stackHTML
 })
 
+
+
+
 // add lang name to cursor
 const textCursor = document.getElementById('textCursor')
 const cards = document.querySelectorAll('.langCard')
+const cardsLangContainer = document.querySelector('.rightSectionContent')
+
+let mouseX = 0, mouseY = 0
+let cursorX = 0, cursorY = 0
+
+
 
 document.addEventListener('mousemove', (event) => {
-    textCursor.style.left = `${event.pageX}px`
-    textCursor.style.top = `${event.pageY}px`
+    mouseX = event.pageX
+    mouseY = event.pageY
+})
+
+function animateCursor(){
+    cursorX += (mouseX - cursorX) * 0.1
+    cursorY += (mouseY - cursorY) * 0.1
+
+    textCursor.style.left = `${cursorX}px`
+    textCursor.style.top = `${cursorY}px`
+
+    requestAnimationFrame(animateCursor)
+}
+
+animateCursor()
+
+
+
+cardsLangContainer.addEventListener('mouseenter', () => {
+    textCursor.classList.add('show')
+    textCursor.classList.remove('hide')
+})
+cardsLangContainer.addEventListener('mouseleave', () => {
+    textCursor.classList.remove('show')
+    textCursor.classList.add('hide')
 })
 
 cards.forEach((card) => {
     card.addEventListener('mouseenter', () => {
-        textCursor.textContent = card.getAttribute('data-name')
-        textCursor.style.display = 'block'
+        document.querySelector('#langText').innerHTML = card.getAttribute('data-name')
     })
-
-    card.addEventListener('mouseleave', () => {
-        textCursor.style.display = 'none'
-    })
-
 })

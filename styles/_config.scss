@@ -6,6 +6,7 @@
 // color variables (using css vairables for colors since it has to be dynamically changed in JS.
 :root{
     --background-color: #121212; //background for body
+    --backgroundColorRGB: 18,18,18;
     --accent-color:  #1e1e1f; //background color for tags, lang card bg, form input bg
     
     --button-color: #ffff; //bg for CTAs
@@ -26,7 +27,8 @@
 
 
 [data-theme = 'light']{
-    --background-color: #ffff;
+    --background-color: #ffffff;
+    --backgroundColorRGB: 255,255,255;
     --accent-color:  #f3f3f3;
     
     --button-color: #121212;
@@ -105,3 +107,31 @@ a{
     font-size: var(--buttonFontSize);
     transition: transform 0.3s ease, color $transition-duration ease, background $transition-duration ease;
 }
+
+
+// keyframes
+@keyframes showCursor {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes hideCursor {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
