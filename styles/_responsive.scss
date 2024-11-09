@@ -111,6 +111,10 @@
     }
 
 
+    .watermark{
+        top: 16rem;
+    }
+
 }
 @media (min-width: $sz5){// 992px
 
@@ -137,7 +141,7 @@
 
 
     .watermark{
-        top: 14rem;
+        top: 18rem;
         left: -5rem;
         .text{
             font-size: 100px;

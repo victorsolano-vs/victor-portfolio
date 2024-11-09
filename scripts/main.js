@@ -1,4 +1,4 @@
-import { myStack } from "./objects.js"
+import { myStack, experience } from "./objects.js"
 
 // LIGHT/DARK THEME JS
 // code to toggle light/dark theme
@@ -45,12 +45,13 @@ let mouseX = 0, mouseY = 0
 let cursorX = 0, cursorY = 0
 
 
-
+//get location of mouse on page
 document.addEventListener('mousemove', (event) => {
     mouseX = event.pageX
     mouseY = event.pageY
 })
 
+// add location to div and animate
 function animateCursor(){
     cursorX += (mouseX - cursorX) * 0.1
     cursorY += (mouseY - cursorY) * 0.1
@@ -64,7 +65,7 @@ function animateCursor(){
 animateCursor()
 
 
-
+// event listeners when mouse enters/leaves individual cards
 cardsLangContainer.addEventListener('mouseenter', () => {
     textCursor.classList.add('show')
     textCursor.classList.remove('hide')
@@ -96,3 +97,4 @@ document.addEventListener('mousemove', (event) => {
       // Apply transform to move text based on mouse position
       watermark.style.transform = `translate(${deltaX}px, ${deltaY}px)`
 })
+

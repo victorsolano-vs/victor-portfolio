@@ -420,6 +420,9 @@ html {
   .hide {
     animation: hideCursor 0.3s forwards;
   }
+  .watermark {
+    top: 16rem;
+  }
 }
 @media (min-width: 62rem) {
   .rightSection {
@@ -438,7 +441,7 @@ html {
     transform: rotate(-75deg);
   }
   .watermark {
-    top: 14rem;
+    top: 18rem;
     left: -5rem;
   }
   .watermark .text {

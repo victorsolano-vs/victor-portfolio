@@ -1,0 +1,164 @@
+#mainSection{
+    min-height: 100vh;
+    position: relative;
+    
+    padding: 0 1.5rem;
+    padding-top: 1.875rem;
+}
+
+// left section
+.leftSectionContent{
+    .title{
+        font-size: var(--headingFontSize);
+        color: var(--text-heading-color);
+        font-weight: 600;
+        transition: color $transition-duration ease;
+    }
+
+    .location{
+        display: flex;
+        margin-top: -7px;
+        margin-bottom: 10px;
+        svg{
+            $svgSize: 15px;
+            width: $svgSize;
+            height: $svgSize;
+
+            path{
+                stroke: var(--text-color);
+                transition: stroke $transition-duration ease;
+            }
+        }
+
+        p{
+            margin-left: 3px;
+            display: inline;
+            font-size: var(--tagFontSize);
+            color: var(--text-color);
+            transition: color $transition-duration ease;
+        }
+    }
+
+    .skillTags{
+        color: var(--tag-text-color);
+        transition: color $transition-duration ease;
+        display: flex;
+        font-size: var(--tagFontSize);
+        margin-bottom: 20px;
+
+        .tag{
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: var(--accent-color);
+            transition: background $transition-duration ease;
+            &:nth-child(1){
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .aboutMeText{
+        color: var(--text-color);
+        transition: color $transition-duration ease;
+        font-size: var(--blockTextFontSize);
+        max-width: 350px;
+    }
+
+    .viewProjectsCTA{
+        @include buttonStyles;
+        margin-top: 25px;
+
+
+    }
+}
+
+
+// right section
+.rightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 4rem;
+}
+
+.myStackTitle{
+    color: var(--tag-text-color);
+    margin-bottom: 1rem;
+    transition: color $transition-duration ease;
+
+
+    p{
+        font-size: var(--subHeadingFontSize);
+        font-family: "Homemade Apple", serif;
+    }
+    svg{
+        display: none;
+        fill: var(--text-heading-color);
+        transition: fill $transition-duration ease;
+    }
+}
+
+.rightSectionContent{
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    .langCard{
+        background: var(--accent-color);
+        border-radius: 10px;
+
+        padding: 1rem 1.5rem;
+
+        -webkit-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
+        -moz-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
+        box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
+
+        width: min-content;
+        min-width: 100px;
+        max-height: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background $transition-duration ease;
+        img{
+            width: 35px;
+            height: 40px;
+        }
+    }
+}
+
+#textCursor{
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--accent-color);
+    background: rgba(var(--backgroundColorRGB), 0.8);
+    border-radius: 50%;
+
+    -webkit-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.6);
+    -moz-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.6);
+    box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.6);
+
+    height: 80px;
+    width: 80px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#langText{
+    font-size: var(--tagFontSize);
+    color: var(--text-heading-color);
+    text-align: center;
+}
