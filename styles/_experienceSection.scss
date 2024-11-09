@@ -1,10 +1,49 @@
 #experienceSection{
-    background-color: blue;
-    .rightSection{
+    // background-color: blue;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .leftSection{
+        // background: antiquewhite;
+        display: flex;
+        justify-content: flex-start;
         
+    }
+
+    .expTasks{
+        list-style-position: inside;
+    }
+
+
+    .rightSection{
+        .expBlock{
+            margin-bottom: 1.5rem;
+        }
+        .expTag{
+            background:var(--accent-color);
+            color: var(--tag-text-color); 
+        }
+
+        .expTitle{
+            color: var(--text-heading-color);
+            font-weight: 400;
+            font-size: var(--subHeadingFontSize);
+        }
+
+        .expTasks{
+            color: var(--text-color);
+            font-size: var(--blockTextFontSize);
+        }
     }
 }
 
 .downloadResumeCTA{
     @include buttonStyles;
+    max-width: fit-content;
+}
+
+html{
+    margin-bottom: 1000px;
 }

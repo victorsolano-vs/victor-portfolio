@@ -119,6 +119,26 @@
         top: 16rem;
     }
 
+    // experience section
+    #experienceSection{
+        flex-direction: row;
+        // gap: 10rem;
+        .leftSection{
+            flex: 1;
+            justify-content: center;
+            position: sticky;
+            top: 7%;
+            height: max-content;
+            .expTitleContainer{
+                min-width: 400px;
+            }
+        }
+        .rightSection{
+            flex: 1;
+
+        }
+    }
+
 }
 @media (min-width: $sz5){// 992px
 

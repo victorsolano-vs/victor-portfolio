@@ -305,7 +305,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.4s ease;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 .rightSectionContent .langCard img {
   width: 35px;
@@ -339,8 +339,35 @@ a {
 }
 
 #experienceSection {
-  background-color: blue;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+#experienceSection .leftSection {
+  display: flex;
+  justify-content: flex-start;
+}
+#experienceSection .expTasks {
+  list-style-position: inside;
+}
+#experienceSection .rightSection .expBlock {
+  margin-bottom: 1.5rem;
+}
+#experienceSection .rightSection .expTag {
+  background: var(--accent-color);
+  color: var(--tag-text-color);
+}
+#experienceSection .rightSection .expTitle {
+  color: var(--text-heading-color);
+  font-weight: 400;
+  font-size: var(--subHeadingFontSize);
+}
+#experienceSection .rightSection .expTasks {
+  color: var(--text-color);
+  font-size: var(--blockTextFontSize);
+}
+
 .downloadResumeCTA {
   background: var(--button-color);
   color: var(--button-text-color);
@@ -350,6 +377,7 @@ a {
   align-items: center;
   font-size: var(--buttonFontSize);
   transition: transform 0.3s ease, color 0.4s ease, background 0.4s ease;
+  max-width: fit-content;
 }
 .downloadResumeCTA svg {
   transform: rotate(-40deg);
@@ -370,7 +398,7 @@ a {
 }
 
 html {
-  padding-bottom: 10000px;
+  margin-bottom: 1000px;
 }
 
 @media (min-width: 22.5rem) {
@@ -444,6 +472,22 @@ html {
   }
   .watermark {
     top: 16rem;
+  }
+  #experienceSection {
+    flex-direction: row;
+  }
+  #experienceSection .leftSection {
+    flex: 1;
+    justify-content: center;
+    position: sticky;
+    top: 7%;
+    height: max-content;
+  }
+  #experienceSection .leftSection .expTitleContainer {
+    min-width: 400px;
+  }
+  #experienceSection .rightSection {
+    flex: 1;
   }
 }
 @media (min-width: 62rem) {
