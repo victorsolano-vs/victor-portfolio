@@ -62,8 +62,7 @@ export const experience = [
         type: 'Education',
         title: 'BSc. Computer Science - The University of the West Indies',
         description: [
-            'this is a pointer',
-            'this is a pointer description 2'
+            'Graduated with a GPA of 3.31'
         ]
     },
     {
@@ -80,7 +79,10 @@ export const experience = [
         title: `CAPE - Queen's Royal College`,
         description: [
             'Applied Mathematics - Unit 1: III & Unit 2: II',
-            'Pure Mathematics - Unit 1: IV & Unit 2: I'
+            'Pure Mathematics - Unit 1: IV & Unit 2: I',
+            'Physics - Unit 1: III & Unit 2: I',
+            'Caribbean Studies - II',
+            'Communication Studies - II'
         ]
     },
     {
@@ -88,8 +90,13 @@ export const experience = [
         type: 'Education',
         title: `CSEC - St. Augustine Community College`,
         description: [
-            'Applied Mathematics - Unit 1: III & Unit 2: II',
-            'Pure Mathematics - Unit 1: IV & Unit 2: I'
+            'Additional Mathematics - II',
+            'Chemistry - II',
+            'English A - II',
+            'Information Technology - I',
+            'Mathematics - I',
+            'Physics - I',
+            'Principle of Accounts - I'
         ]
     }
 ]

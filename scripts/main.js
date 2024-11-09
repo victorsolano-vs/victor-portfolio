@@ -98,3 +98,34 @@ cards.forEach((card) => {
 //       watermark.style.transform = `translate(${deltaX}px, ${deltaY}px)`
 // })
 
+
+
+// render experience array
+const experienceContainer = document.querySelector('.experienceContainer')
+
+let experienceHTML = ''
+
+experience.forEach((exp) => {
+    experienceHTML += `
+         <div class="expBlock">
+        <div>
+            <span class = 'expTag expDuration'>${exp.duration}</span>
+            <span class = 'expTag expType'>${exp.type}</span>
+        </div>
+        <div class="expInfo">
+            <h1 class="expTitle">
+                ${exp.title}
+            </h1>
+            <ul class="expTasks">
+                ${exp.description.map((desc) => 
+                    `
+                        <li>${desc}</li>
+                    `
+                ).join('')}
+            </ul>
+        </div>
+     </div>
+    `
+})
+
+experienceContainer.innerHTML = experienceHTML
