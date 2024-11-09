@@ -36,6 +36,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: var(--background-color);
   transition: background 0.4s ease;
 }
@@ -329,22 +330,6 @@ a {
   font-size: var(--tagFontSize);
   color: var(--text-heading-color);
   text-align: center;
-}
-
-.watermark {
-  position: absolute;
-  left: 0;
-  top: 10rem;
-  z-index: -1;
-  transition: transform 0.1s ease-out;
-}
-.watermark .text {
-  font-size: 80px;
-  font-weight: 600;
-  text-wrap: nowrap;
-  opacity: 0.35;
-  color: var(--accent-color);
-  transition: color 0.4s ease;
 }
 
 html {

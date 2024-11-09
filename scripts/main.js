@@ -84,17 +84,17 @@ cards.forEach((card) => {
 
 
 // move watermark on mouse move
-const watermark = document.querySelector('.watermark')
+// const watermark = document.querySelector('.watermark')
 
-document.addEventListener('mousemove', (event) => {
-    const centerX = window.innerWidth / 2
-      const centerY = window.innerHeight / 2
+// document.addEventListener('mousemove', (event) => {
+//     const centerX = window.innerWidth / 2
+//       const centerY = window.innerHeight / 2
 
-      // Calculate how far the mouse is from the center
-      const deltaX = (event.clientX - centerX) / 20
-      const deltaY = (event.clientY - centerY) / 20
+//       // Calculate how far the mouse is from the center
+//       const deltaX = (event.clientX - centerX) / 20
+//       const deltaY = (event.clientY - centerY) / 20
 
-      // Apply transform to move text based on mouse position
-      watermark.style.transform = `translate(${deltaX}px, ${deltaY}px)`
-})
+//       // Apply transform to move text based on mouse position
+//       watermark.style.transform = `translate(${deltaX}px, ${deltaY}px)`
+// })
 

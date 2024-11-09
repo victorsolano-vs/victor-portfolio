@@ -58,7 +58,9 @@ $sz8: 87.5rem;
     padding: 0;
     font-family: "Poppins", serif;
 }
+
 body{
+    overflow-x: hidden;
     background: var(--background-color);
     transition: background $transition-duration ease;
 }
