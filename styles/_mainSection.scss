@@ -6,6 +6,13 @@
     padding-top: 1.875rem;
 }
 
+#mainSection{
+    .leftSection{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 // left section
 .leftSectionContent{
 

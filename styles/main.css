@@ -187,6 +187,11 @@ a {
   padding-top: 1.875rem;
 }
 
+#mainSection .leftSection {
+  display: flex;
+  justify-content: center;
+}
+
 .leftSectionContent .location {
   display: flex;
   margin-top: -7px;
