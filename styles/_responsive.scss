@@ -82,20 +82,24 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+
+        .leftSection{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightSection{
+            position: relative;
+            flex:1;
+            justify-content: center;
+            margin-top: 0;
+        }
     }
 
-    .leftSection{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
 
-    .rightSection{
-        position: relative;
-        flex:1;
-        justify-content: center;
-        margin-top: 0;
-    }
+
+
 
     // adding styles for special hover effect
     .rightSectionContent{
@@ -120,10 +124,12 @@
 
     
 
-
-    .rightSection{
-        flex-direction: row;
+    #mainSection{
+        .rightSection{
+            flex-direction: row;
+        }
     }
+
 
     .myStackTitle{
         position: absolute;

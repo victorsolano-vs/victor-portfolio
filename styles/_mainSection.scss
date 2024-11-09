@@ -8,12 +8,7 @@
 
 // left section
 .leftSectionContent{
-    .title{
-        font-size: var(--headingFontSize);
-        color: var(--text-heading-color);
-        font-weight: 600;
-        transition: color $transition-duration ease;
-    }
+
 
     .location{
         display: flex;
@@ -74,14 +69,17 @@
 
 
 // right section
-.rightSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    margin-top: 4rem;
+#mainSection{
+    .rightSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        margin-top: 4rem;
+    }
 }
+
 
 .myStackTitle{
     color: var(--tag-text-color);

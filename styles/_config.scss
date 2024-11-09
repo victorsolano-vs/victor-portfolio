@@ -75,6 +75,13 @@ a{
     text-decoration: none;
 }
 
+.sectionTitle{
+    font-size: var(--headingFontSize);
+    color: var(--text-heading-color);
+    font-weight: 600;
+    transition: color $transition-duration ease;
+}
+
 // common code for navbar
 @mixin horizontalList{
     display: flex;
