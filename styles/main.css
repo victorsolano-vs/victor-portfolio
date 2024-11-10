@@ -344,10 +344,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 8rem;
 }
 #experienceSection .leftSection {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 2rem;
 }
 #experienceSection .expTasks {
   list-style-position: inside;
@@ -355,18 +357,34 @@ a {
 #experienceSection .rightSection .expBlock {
   margin-bottom: 1.5rem;
 }
+#experienceSection .rightSection .expBlock:nth-last-child(1) {
+  margin-bottom: 0;
+}
+#experienceSection .rightSection .tagsContainer {
+  margin-bottom: 0.5rem;
+}
 #experienceSection .rightSection .expTag {
+  font-size: var(--tagFontSize);
   background: var(--accent-color);
   color: var(--tag-text-color);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+#experienceSection .rightSection .expTag:nth-child(1) {
+  margin-right: 0.3rem;
 }
 #experienceSection .rightSection .expTitle {
   color: var(--text-heading-color);
   font-weight: 400;
   font-size: var(--subHeadingFontSize);
+  margin-bottom: 0.5rem;
+  transition: color 0.4s ease;
 }
 #experienceSection .rightSection .expTasks {
   color: var(--text-color);
   font-size: var(--blockTextFontSize);
+  transition: color 0.4s ease;
 }
 
 .downloadResumeCTA {

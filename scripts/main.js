@@ -108,7 +108,7 @@ let experienceHTML = ''
 experience.forEach((exp) => {
     experienceHTML += `
          <div class="expBlock">
-        <div>
+        <div class = 'tagsContainer'>
             <span class = 'expTag expDuration'>${exp.duration}</span>
             <span class = 'expTag expType'>${exp.type}</span>
         </div>
