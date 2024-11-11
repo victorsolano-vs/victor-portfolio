@@ -22,7 +22,7 @@
   --backgroundColor: #ffffff;
   --backgroundColorRGB: 255,255,255;
   --accentColor: #f3f3f3;
-  --guideColor:#919396;
+  --guideColor:#c9ccd1;
   --buttonColor: #121212;
   --buttonTextColor: #ffffff;
   --textColor: #121212;
@@ -380,12 +380,13 @@ a {
   position: relative;
 }
 #experienceSection .rightSection::before {
-  background: var(--accentColor);
+  background: var(--guideColor);
   position: absolute;
   content: "";
   width: 2px;
   left: -19px;
   height: 100%;
+  transition: background 0.4s ease;
 }
 #experienceSection .expBlock {
   padding-bottom: 1.5rem;
@@ -393,8 +394,9 @@ a {
 }
 #experienceSection .expBlock::before {
   border-radius: 50px;
-  border: var(--accentColor) 2px solid;
-  background-color: var(--backgroundColor);
+  border: var(--guideColor) 2px solid;
+  background: var(--backgroundColor);
+  transition: background 0.4s ease, border 0.4s ease;
   content: "";
   position: absolute;
   left: -30px;

@@ -20,12 +20,14 @@
         position: relative;
 
         &::before{
-            background: var(--accentColor);
+            background: var(--guideColor);
             position: absolute;
             content: '';
             width: 2px;
             left: -19px;
             height: 100%;
+
+            transition: background $transitionDuration ease;
         }
     }
 
@@ -35,8 +37,10 @@
         
         &::before{
             border-radius: 50px;
-            border: var(--accentColor) 2px solid;
-            background-color: var(--backgroundColor);
+            border: var(--guideColor) 2px solid;
+            background: var(--backgroundColor);
+
+            transition: background $transitionDuration ease, border $transitionDuration ease;
 
             content: '';
             position: absolute;
