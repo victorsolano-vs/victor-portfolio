@@ -4,10 +4,19 @@
     
     padding: 0 1.5rem;
     padding-top: 1.875rem;
+    background: cyan;
 
     .leftSection{
         display: flex;
         justify-content: center;
+        // background: lightgoldenrodyellow;
+    }
+
+    .leftSectionContent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     // left section
@@ -57,7 +66,7 @@
         color: var(--textColor);
         transition: color $transitionDuration ease;
         font-size: var(--blockTextFontSize);
-        max-width: 350px;
+        max-width: 490px;
     }
 
     .viewProjectsCTA{
@@ -73,8 +82,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
-        margin-top: 4rem;
+        margin-top: 4rem; //gap for mobile view
+
+        // background: cyan;
     }
 
 

@@ -6,10 +6,7 @@
         --tagFontSize: 0.75rem; //12px
 
         --linksFontSize: 0.875rem; //14px
-        --buttonFontSize: 0.875rem; //14px
-
-        
-        --subHeadingFontSize: 1.25rem; //20px
+        --buttonFontSize: 0.875rem; //14px   
     }
 
     #mainSection{
@@ -44,7 +41,10 @@
 
 }
 @media (min-width: $sz3){// 576px
+    // :root{
+    //     --subHeadingFontSize: 1.25rem; //20px
 
+    // }
     
 }
 @media (min-width: 640px){// 640px
@@ -78,7 +78,7 @@
 
     // main Section turn to row layout for bigger screen
     #mainSection{
-        padding-top: 10rem;
+        padding-top: 13rem;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -87,6 +87,11 @@
             flex: 1;
             display: flex;
             justify-content: center;
+        }
+
+        .leftSectionContent{
+            align-items: flex-start;
+            text-align: left;
         }
 
         .rightSection{
@@ -115,19 +120,23 @@
 
     // experience section
     #experienceSection{
+        margin-top: 0;
         padding-top: 4rem;
-        flex-direction: row;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
         .leftSection{
             flex: 1;
             justify-content: center;
             position: sticky;
             top: 7%;
             height: max-content;
-            
+            margin-left: 0;
         }
 
         .expTitleContainer{
             min-width: 400px;
+            align-items: flex-start;
         }
 
         .rightSection{
@@ -138,8 +147,6 @@
 
 }
 @media (min-width: $sz5){// 992px
-
-    
 
     #mainSection{
         .rightSection{
@@ -177,7 +184,6 @@
         --subHeadingFontSize: 1.25rem; //20px
     }
     #mainSection{
-        padding-top: 12rem;
         .aboutMeText{
             max-width: 400px;
         }

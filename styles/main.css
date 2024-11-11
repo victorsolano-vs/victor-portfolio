@@ -13,7 +13,7 @@
   --blockTextFontSize: 0.75rem;
   --tagFontSize: 0.688rem;
   --logoFontSize: 1rem;
-  --subHeadingFontSize: 1.25rem;
+  --subHeadingFontSize: 1.125rem;
   --linksFontSize: 0.75rem;
   --buttonFontSize: 0.75rem;
 }
@@ -189,10 +189,17 @@ a {
   position: relative;
   padding: 0 1.5rem;
   padding-top: 1.875rem;
+  background: cyan;
 }
 #mainSection .leftSection {
   display: flex;
   justify-content: center;
+}
+#mainSection .leftSectionContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 #mainSection .location {
   display: flex;
@@ -234,7 +241,7 @@ a {
   color: var(--textColor);
   transition: color 0.4s ease;
   font-size: var(--blockTextFontSize);
-  max-width: 350px;
+  max-width: 490px;
 }
 #mainSection .viewProjectsCTA {
   display: inline-flex;
@@ -338,16 +345,18 @@ a {
 }
 
 #experienceSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 0 1.5rem;
 }
 #experienceSection .leftSection {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   padding-bottom: 2rem;
+}
+#experienceSection .expTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #experienceSection .downloadResumeCTA {
   display: inline-flex;
@@ -359,6 +368,7 @@ a {
   font-size: var(--buttonFontSize);
   transition: transform 0.3s ease, color 0.4s ease, background 0.4s ease;
   max-width: fit-content;
+  margin-top: 0.5rem;
 }
 #experienceSection .downloadResumeCTA svg {
   transform: rotate(-40deg);
@@ -379,6 +389,7 @@ a {
 }
 #experienceSection .rightSection {
   position: relative;
+  margin-left: 0.5rem;
 }
 #experienceSection .rightSection::before {
   background: var(--guideColor);
@@ -386,7 +397,8 @@ a {
   content: "";
   width: 2px;
   left: -19px;
-  height: 100%;
+  bottom: 0;
+  height: 98%;
   transition: background 0.4s ease;
 }
 #experienceSection .expBlock {
@@ -400,10 +412,10 @@ a {
   transition: background 0.4s ease, border 0.4s ease;
   content: "";
   position: absolute;
-  left: -30px;
-  top: 0;
-  width: 20px;
-  height: 20px;
+  left: -27.5px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
 }
 #experienceSection .expBlock:nth-last-child(1) {
   padding-bottom: 0;
@@ -428,6 +440,7 @@ a {
   font-weight: 400;
   margin-bottom: 0.5rem;
   transition: color 0.4s ease;
+  line-height: 1.2em;
 }
 #experienceSection .expTasks {
   color: var(--textColor);
@@ -443,7 +456,6 @@ a {
     --tagFontSize: 0.75rem;
     --linksFontSize: 0.875rem;
     --buttonFontSize: 0.875rem;
-    --subHeadingFontSize: 1.25rem;
   }
   #mainSection .location svg {
     width: 16px;
@@ -480,7 +492,7 @@ a {
     left: 0;
   }
   #mainSection {
-    padding-top: 10rem;
+    padding-top: 13rem;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -489,6 +501,10 @@ a {
     flex: 1;
     display: flex;
     justify-content: center;
+  }
+  #mainSection .leftSectionContent {
+    align-items: flex-start;
+    text-align: left;
   }
   #mainSection .rightSection {
     position: relative;
@@ -506,8 +522,11 @@ a {
     animation: hideCursor 0.3s forwards;
   }
   #experienceSection {
+    margin-top: 0;
     padding-top: 4rem;
-    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   #experienceSection .leftSection {
     flex: 1;
@@ -515,9 +534,11 @@ a {
     position: sticky;
     top: 7%;
     height: max-content;
+    margin-left: 0;
   }
   #experienceSection .expTitleContainer {
     min-width: 400px;
+    align-items: flex-start;
   }
   #experienceSection .rightSection {
     flex: 1;
@@ -548,9 +569,6 @@ a {
     --linksFontSize: 0.875rem;
     --buttonFontSize: 0.875rem;
     --subHeadingFontSize: 1.25rem;
-  }
-  #mainSection {
-    padding-top: 12rem;
   }
   #mainSection .aboutMeText {
     max-width: 400px;
