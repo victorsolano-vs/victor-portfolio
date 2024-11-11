@@ -80,6 +80,7 @@
     
 
     .navLink{
+        transition: color $transitionDuration ease;
         color: var(--textHeadingColor);
         font-size: var(--linksFontSize);
     }

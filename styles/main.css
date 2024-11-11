@@ -180,6 +180,7 @@ a {
   opacity: 0.55;
 }
 .mobileLinksContent .navLink {
+  transition: color 0.4s ease;
   color: var(--textHeadingColor);
   font-size: var(--linksFontSize);
 }
