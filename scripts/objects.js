@@ -100,3 +100,37 @@ export const experience = [
         ]
     }
 ]
+
+export const projects = [
+    {
+        projectName: 'test',
+        projectType: 'Web Development',
+        projectDescription: 'blah blah blah',
+        projectTechStack: [
+            'React',
+            'SASS'
+        ],
+        projectLiveLink: 'www.google.com',
+        projectSourceCode: 'www.github.com',
+        projectImages: {
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source' 
+        }
+    } ,
+    {
+        projectName: 'design project',
+        projectType: 'UI/UX Design',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
+    }
+]
