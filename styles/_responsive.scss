@@ -12,7 +12,7 @@
         --subHeadingFontSize: 1.25rem; //20px
     }
 
-    .leftSectionContent{
+    #mainSection{
         .location{
             svg{
                 $svgSize: 16px;
@@ -28,10 +28,23 @@
                 height: $svgSize;
             }
         }
+
+
+        .rightSectionContent{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
-    .rightSectionContent{
-        grid-template-columns: repeat(3, 1fr);
+    #experienceSection{
+
+    }
+
+    #portfolioiSection{
+
+    }
+
+    #contactSection{
+
     }
 
     .mobileLinksContent{
@@ -77,7 +90,6 @@
 
     // main Section turn to row layout for bigger screen
     #mainSection{
-        // margin-top: 3.188rem;
         padding-top: 10rem;
         display: flex;
         align-items: flex-start;
@@ -95,17 +107,16 @@
             justify-content: center;
             margin-top: 0;
         }
+
+            // adding styles for special hover effect
+        .rightSectionContent{
+            cursor: none;
+        }
+
     }
 
 
-
-
-
-    // adding styles for special hover effect
-    .rightSectionContent{
-        cursor: none;
-    }
-
+    // classes for cursor hover effect
     .show {
         animation: showCursor 0.3s forwards;
     }
@@ -114,26 +125,23 @@
         animation: hideCursor 0.3s forwards;
     }
 
-
-    .watermark{
-        top: 16rem;
-    }
-
     // experience section
     #experienceSection{
         padding-top: 4rem;
         flex-direction: row;
-        // gap: 10rem;
         .leftSection{
             flex: 1;
             justify-content: center;
             position: sticky;
             top: 7%;
             height: max-content;
-            .expTitleContainer{
-                min-width: 400px;
-            }
+            
         }
+
+        .expTitleContainer{
+            min-width: 400px;
+        }
+
         .rightSection{
             flex: 1;
 
@@ -149,29 +157,18 @@
         .rightSection{
             flex-direction: row;
         }
-    }
 
-
-    .myStackTitle{
-        position: absolute;
-        margin-right: 300px;
-        bottom: -5em;
-        display: flex;
-        svg{
-            margin-left: 10px;
-            margin-top: -10px;
-            display: block;
-            transform: rotate(-75deg);
-        }
-    }
-
-
-
-    .watermark{
-        top: 18rem;
-        left: -5rem;
-        .text{
-            font-size: 100px;
+        .myStackTitle{
+            position: absolute;
+            margin-right: 300px;
+            bottom: -5em;
+            display: flex;
+            svg{
+                margin-left: 10px;
+                margin-top: -10px;
+                display: block;
+                transform: rotate(-75deg);
+            }
         }
     }
     
@@ -191,30 +188,21 @@
         
         --subHeadingFontSize: 1.25rem; //20px
     }
-    .leftSectionContent{
+    #mainSection{
+        padding-top: 12rem;
         .aboutMeText{
             max-width: 400px;
         }
-    }
 
-    .rightSectionContent{
         .langCard{
             padding: 2rem 2.5rem;
             min-width: 120px;
         }
     }
 
-    #mainSection{
-        padding-top: 12rem;
-    }
 
-    .watermark{
-        top: 18rem;
-        left: -8rem;
-        .text{
-            font-size: 150px;
-        }
-    }
+    
+
 }
 
 

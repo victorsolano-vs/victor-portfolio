@@ -5,16 +5,16 @@
 
 // color variables (using css vairables for colors since it has to be dynamically changed in JS.
 :root{
-    --background-color: #121212; //background for body
+    --backgroundColor: #121212; //background for body
     --backgroundColorRGB: 18,18,18;
-    --accent-color:  #1e1e1f; //background color for tags, lang card bg, form input bg
+    --accentColor:  #1e1e1f; //background color for tags, lang card bg, form input bg
+
+    --buttonColor: #ffff; //bg for CTAs
+    --buttonTextColor: #1e1e1f; //text color for CTAs
     
-    --button-color: #ffff; //bg for CTAs
-    --button-text-color: #1e1e1f; //text color for CTAs
-    
-    --text-color: #d6d6d6; //piece of regular text
-    --tag-text-color: #ffffff; //text color for tag
-    --text-heading-color: #ffff; //text color for headings
+    --textColor: #d6d6d6; //piece of regular text
+    --tagTextColor: #ffffff; //text color for tag
+    --textHeadingColor: #ffff; //text color for headings
 
     --headingFontSize: 2.188rem; //35px initial value
     --blockTextFontSize: 0.75rem; //12 px
@@ -27,20 +27,20 @@
 
 
 [data-theme = 'light']{
-    --background-color: #ffffff;
+    --backgroundColor: #ffffff;
     --backgroundColorRGB: 255,255,255;
-    --accent-color:  #f3f3f3;
+    --accentColor:  #f3f3f3;
     
-    --button-color: #121212;
-    --button-text-color: #ffffff;
+    --buttonColor: #121212;
+    --buttonTextColor: #ffffff;
     
-    --text-color: #121212;
-    --tag-text-color: #121212;
-    --text-heading-color: #121212;
+    --textColor: #121212;
+    --tagTextColor: #121212;
+    --textHeadingColor: #121212;
 }
 
 // transition duration for theme change
-$transition-duration: 0.4s;
+$transitionDuration: 0.4s;
 
 // media queries
 $sz1: 22.5rem; //360px
@@ -62,8 +62,8 @@ $sz8: 87.5rem;
 
 body{
     overflow-x: hidden;
-    background: var(--background-color);
-    transition: background $transition-duration ease;
+    background: var(--backgroundColor);
+    transition: background $transitionDuration ease;
 }
 
 .siteContainer{
@@ -78,9 +78,9 @@ a{
 
 .sectionTitle{
     font-size: var(--headingFontSize);
-    color: var(--text-heading-color);
+    color: var(--textHeadingColor);
     font-weight: 600;
-    transition: color $transition-duration ease;
+    transition: color $transitionDuration ease;
 }
 
 // common code for navbar
@@ -103,19 +103,19 @@ a{
 }
 
 @mixin frostedBackground{
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 @mixin buttonStyles{
-    background: var(--button-color);
-    color: var(--button-text-color);
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     display: inline-flex;
     align-items: center;
     font-size: var(--buttonFontSize);
-    transition: transform 0.3s ease, color $transition-duration ease, background $transition-duration ease;
+    transition: transform 0.3s ease, color $transitionDuration ease, background $transitionDuration ease;
 
     svg{
         transform: rotate(-40deg);
@@ -127,8 +127,8 @@ a{
         transition: transform 0.3s ease;
         
         path{
-            stroke: var(--button-text-color);
-            transition: transform $transition-duration ease, stroke $transition-duration ease;
+            stroke: var(--buttonTextColor);
+            transition: transform $transitionDuration ease, stroke $transitionDuration ease;
         }
     }
 

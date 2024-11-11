@@ -10,21 +10,4 @@
 // experience section styles
 @import 'experienceSection';
 
-// watermark styles
-// .watermark{
-//     position: absolute;
-//     left: 1%;
-//     top: 10rem;
-//     z-index: -1;
-//     transition: transform 0.1s ease-out;
-//     .text{
-//         font-size: 80px;
-//         font-weight: 600;
-//         text-wrap: nowrap;
-//         opacity: 0.35;
-//         color: var(--accent-color);
-//         transition: color $transition-duration ease;
-//     }
-// }
-
 @import 'responsive';

@@ -1,67 +1,83 @@
 #experienceSection{
-    // background-color: blue;
     padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 8rem;
+
     .leftSection{
-        // background: antiquewhite;
         display: flex;
         justify-content: flex-start;
         padding-bottom: 2rem;
     }
 
-    .expTasks{
-        list-style-position: inside;
+    .downloadResumeCTA{
+        @include buttonStyles;
+        max-width: fit-content;
     }
-
 
     .rightSection{
-        .expBlock{
-            margin-bottom: 1.5rem;
-            &:nth-last-child(1){
-                margin-bottom: 0;
-            }
-            // background-color: red;
-        }
+        position: relative;
 
-        .tagsContainer{
-            margin-bottom: 0.5rem;
-        }
-        .expTag{
-            font-size: var(--tagFontSize);
-            background:var(--accent-color);
-            color: var(--tag-text-color); 
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            transition: background $transition-duration ease, color $transition-duration ease;
-            &:nth-child(1){
-                margin-right: 0.3rem;
-            }
-        }
-
-        .expTitle{
-            color: var(--text-heading-color);
-            font-weight: 400;
-            font-size: var(--subHeadingFontSize);
-            margin-bottom: 0.5rem;
-            transition: color $transition-duration ease;
-        }
-
-        .expTasks{
-            color: var(--text-color);
-            font-size: var(--blockTextFontSize);
-            transition: color $transition-duration ease;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 2px;
+            background: var(--accentColor);
+            left: -19px;
+            height: 100%;
         }
     }
-}
 
-.downloadResumeCTA{
-    @include buttonStyles;
-    max-width: fit-content;
-}
+    .expBlock{
+        padding-bottom: 1.5rem;
+        position: relative;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            border-radius: 50px;
+            border: var(--accentColor) 2px solid;
+            background-color: var(--backgroundColor);
+            width: 20px;
+            height: 20px;
+        }
 
-html{
-    margin-bottom: 1000px;
+        &:nth-last-child(1){
+            padding-bottom: 0;
+        }
+    }
+
+    .tagsContainer{
+        margin-bottom: 0.5rem;
+    }
+
+    .expTag{
+        font-size: var(--tagFontSize);
+        background:var(--accentColor);
+        color: var(--tagTextColor); 
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        transition: background $transitionDuration ease, color $transitionDuration ease;
+        &:nth-child(1){
+            margin-right: 0.3rem;
+        }
+    }
+
+    .expTitle{
+        color: var(--textHeadingColor);
+        font-weight: 400;
+        font-size: var(--subHeadingFontSize);
+        margin-bottom: 0.5rem;
+        transition: color $transitionDuration ease;
+    }
+
+    .expTasks{
+        color: var(--textColor);
+        font-size: var(--blockTextFontSize);
+        transition: color $transitionDuration ease;
+        list-style-position: inside;
+    }
 }

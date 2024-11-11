@@ -4,17 +4,13 @@
     
     padding: 0 1.5rem;
     padding-top: 1.875rem;
-}
 
-#mainSection{
     .leftSection{
         display: flex;
         justify-content: center;
     }
-}
 
-// left section
-.leftSectionContent{
+    // left section
     .location{
         display: flex;
         margin-top: -7px;
@@ -25,8 +21,8 @@
             height: $svgSize;
 
             path{
-                stroke: var(--text-color);
-                transition: stroke $transition-duration ease;
+                stroke: var(--textColor);
+                transition: stroke $transitionDuration ease;
             }
         }
 
@@ -34,14 +30,14 @@
             margin-left: 3px;
             display: inline;
             font-size: var(--tagFontSize);
-            color: var(--text-color);
-            transition: color $transition-duration ease;
+            color: var(--textColor);
+            transition: color $transitionDuration ease;
         }
     }
 
     .skillTags{
-        color: var(--tag-text-color);
-        transition: color $transition-duration ease;
+        color: var(--tagTextColor);
+        transition: color $transitionDuration ease;
         display: flex;
         font-size: var(--tagFontSize);
         margin-bottom: 20px;
@@ -49,8 +45,8 @@
         .tag{
             padding: 0.5rem 1rem;
             border-radius: 20px;
-            background: var(--accent-color);
-            transition: background $transition-duration ease;
+            background: var(--accentColor);
+            transition: background $transitionDuration ease;
             &:nth-child(1){
                 margin-right: 0.5rem;
             }
@@ -58,8 +54,8 @@
     }
 
     .aboutMeText{
-        color: var(--text-color);
-        transition: color $transition-duration ease;
+        color: var(--textColor);
+        transition: color $transitionDuration ease;
         font-size: var(--blockTextFontSize);
         max-width: 350px;
     }
@@ -67,14 +63,11 @@
     .viewProjectsCTA{
         @include buttonStyles;
         margin-top: 25px;
-
-
     }
-}
 
 
-// right section
-#mainSection{
+
+    // right section
     .rightSection{
         display: flex;
         align-items: center;
@@ -83,34 +76,17 @@
     
         margin-top: 4rem;
     }
-}
 
 
-.myStackTitle{
-    color: var(--tag-text-color);
-    margin-bottom: 1rem;
-    transition: color $transition-duration ease;
-
-
-    p{
-        font-size: var(--subHeadingFontSize);
-        font-family: "Homemade Apple", serif;
+    .rightSectionContent{
+        display: grid;
+        gap: 0.5rem;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
     }
-    svg{
-        display: none;
-        fill: var(--text-heading-color);
-        transition: fill $transition-duration ease;
-    }
-}
-
-.rightSectionContent{
-    display: grid;
-    gap: 0.5rem;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
 
     .langCard{
-        background: var(--accent-color);
+        background: var(--accentColor);
         border-radius: 10px;
 
         padding: 1rem 1.5rem;
@@ -127,13 +103,32 @@
         align-items: center;
         justify-content: center;
 
-        transition: background $transition-duration ease, box-shadow $transition-duration ease;
+        transition: background $transitionDuration ease, box-shadow $transitionDuration ease;
         img{
             width: 35px;
             height: 40px;
         }
     }
+    
+    .myStackTitle{
+        color: var(--tagTextColor);
+        margin-bottom: 1rem;
+        transition: color $transitionDuration ease;
+    
+    
+        p{
+            font-size: var(--subHeadingFontSize);
+            font-family: "Homemade Apple", serif;
+        }
+        svg{
+            display: none;
+            fill: var(--textHeadingColor);
+            transition: fill $transitionDuration ease;
+        }
+    }
+
 }
+
 
 #textCursor{
     position: absolute;
@@ -145,7 +140,7 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--accentColor);
     background: rgba(var(--backgroundColorRGB), 0.8);
     border-radius: 50%;
 
@@ -162,6 +157,6 @@
 
 #langText{
     font-size: var(--tagFontSize);
-    color: var(--text-heading-color);
+    color: var(--textHeadingColor);
     text-align: center;
 }
