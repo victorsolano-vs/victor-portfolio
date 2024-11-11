@@ -1,9 +1,9 @@
 #experienceSection{
-    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 8rem;
+    padding: 0 1.5rem;
 
     .leftSection{
         display: flex;
@@ -20,10 +20,10 @@
         position: relative;
 
         &::before{
+            background: var(--accentColor);
             position: absolute;
             content: '';
             width: 2px;
-            background: var(--accentColor);
             left: -19px;
             height: 100%;
         }
@@ -34,13 +34,14 @@
         position: relative;
         
         &::before{
+            border-radius: 50px;
+            border: var(--accentColor) 2px solid;
+            background-color: var(--backgroundColor);
+
             content: '';
             position: absolute;
             left: -30px;
             top: 0;
-            border-radius: 50px;
-            border: var(--accentColor) 2px solid;
-            background-color: var(--backgroundColor);
             width: 20px;
             height: 20px;
         }
@@ -58,6 +59,7 @@
         font-size: var(--tagFontSize);
         background:var(--accentColor);
         color: var(--tagTextColor); 
+
         padding: 0.3rem 1rem;
         border-radius: 20px;
         transition: background $transitionDuration ease, color $transitionDuration ease;
@@ -68,8 +70,9 @@
 
     .expTitle{
         color: var(--textHeadingColor);
-        font-weight: 400;
         font-size: var(--subHeadingFontSize);
+
+        font-weight: 400;
         margin-bottom: 0.5rem;
         transition: color $transitionDuration ease;
     }

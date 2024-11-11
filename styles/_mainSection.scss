@@ -36,16 +36,16 @@
     }
 
     .skillTags{
-        color: var(--tagTextColor);
-        transition: color $transitionDuration ease;
         display: flex;
-        font-size: var(--tagFontSize);
+        color: var(--tagTextColor);
+        font-size: var(--tagFontSize);        
         margin-bottom: 20px;
+        transition: color $transitionDuration ease;
 
         .tag{
+            background: var(--accentColor);
             padding: 0.5rem 1rem;
             border-radius: 20px;
-            background: var(--accentColor);
             transition: background $transitionDuration ease;
             &:nth-child(1){
                 margin-right: 0.5rem;
@@ -86,22 +86,21 @@
     }
 
     .langCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         background: var(--accentColor);
         border-radius: 10px;
-
         padding: 1rem 1.5rem;
-
-        -webkit-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
-        -moz-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
-        box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
 
         width: min-content;
         min-width: 100px;
         max-height: 90px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
+        -moz-box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
+        box-shadow: 3px 10px 28px 0px rgba(var(--backgroundColorRGB),0.8);
 
         transition: background $transitionDuration ease, box-shadow $transitionDuration ease;
         img{
@@ -131,14 +130,14 @@
 
 
 #textCursor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0);
     z-index: 1000;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     border: 1px solid var(--accentColor);
     background: rgba(var(--backgroundColorRGB), 0.8);

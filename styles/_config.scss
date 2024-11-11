@@ -8,6 +8,7 @@
     --backgroundColor: #121212; //background for body
     --backgroundColorRGB: 18,18,18;
     --accentColor:  #1e1e1f; //background color for tags, lang card bg, form input bg
+    --guideColor: #464748; //color for guideline in exp section
 
     --buttonColor: #ffff; //bg for CTAs
     --buttonTextColor: #1e1e1f; //text color for CTAs
@@ -30,6 +31,7 @@
     --backgroundColor: #ffffff;
     --backgroundColorRGB: 255,255,255;
     --accentColor:  #f3f3f3;
+    --guideColor:#919396;
     
     --buttonColor: #121212;
     --buttonTextColor: #ffffff;
@@ -89,6 +91,7 @@ a{
     list-style: none;
     align-items: center;
     justify-content: space-between;
+
     max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
@@ -108,13 +111,15 @@ a{
 }
 
 @mixin buttonStyles{
-    background: var(--buttonColor);
-    color: var(--buttonTextColor);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
     display: inline-flex;
     align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
     font-size: var(--buttonFontSize);
+
     transition: transform 0.3s ease, color $transitionDuration ease, background $transitionDuration ease;
 
     svg{

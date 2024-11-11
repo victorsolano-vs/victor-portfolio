@@ -3,17 +3,19 @@
 }
 
 .navbarContent{
-    padding: 0.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    padding: 0.5rem 1.5rem;
+
     .logo{
         text-transform: uppercase;
         font-size: var(--logoFontSize);
+        color: var(--textHeadingColor);
+
         font-weight: 600;
         letter-spacing: 0.1rem;
-        color: var(--textHeadingColor);
         transition: color $transitionDuration ease, transform 0.5s ease;
 
         &:hover{
