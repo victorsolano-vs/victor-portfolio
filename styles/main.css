@@ -85,6 +85,10 @@ a {
     visibility: hidden;
   }
 }
+html {
+  margin-bottom: 10000px;
+}
+
 .navbar {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -524,10 +528,6 @@ a {
   position: relative;
 }
 
-html {
-  margin-bottom: 10000px;
-}
-
 @media (min-width: 22.5rem) {
   :root {
     --headingFontSize: 2.5rem;
@@ -550,6 +550,28 @@ html {
   .mobileLinksContent {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+}
+@media (min-width: 640px) {
+  #portfolioSection .dropdownListBtn {
+    display: none;
+  }
+  #portfolioSection .categoryList {
+    max-width: 500px;
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #portfolioSection .categoryList button {
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  #portfolioSection .categoryList button:hover {
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
   }
 }
 @media (min-width: 48rem) {

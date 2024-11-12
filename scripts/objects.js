@@ -132,5 +132,20 @@ export const projects = [
             desktopView: 'source',
             pallete: 'source'
         }
+    },
+    {
+        projectName: 'app project',
+        projectType: 'App Development',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
     }
 ]

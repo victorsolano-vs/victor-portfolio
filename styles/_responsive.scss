@@ -48,7 +48,29 @@
     
 }
 @media (min-width: 640px){// 640px
+    #portfolioSection{
+        .dropdownListBtn{
+            display: none;
+        }
+        .categoryList{
+            max-width: 500px;
+            position: static;
+            opacity: 1;
+            pointer-events: all;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
+            button{
+                transition: background 0.3s ease, color 0.3s ease;
+                &:hover{
+                    background: var(--buttonColor);
+                    color: var(--buttonTextColor);
+                }
+            }
+        }
+    }
     
 }
 @media (min-width: $sz4){// 768px

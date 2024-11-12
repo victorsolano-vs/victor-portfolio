@@ -135,7 +135,7 @@ categoryItems.forEach((item) => {
 })
 
 
-// code to render projects
+// code to render initial projects
 renderProjects(projects)
 
 
@@ -160,7 +160,7 @@ function renderProjects(toRenderProj){
     
     toRenderProj.forEach((project) => {
         portfolioHTML += `<p style = "color: white;">
-            ${project.projectName}
+            ${project.projectName} AND ${project.projectType}
         </p>`
     })
     
