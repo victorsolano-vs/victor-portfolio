@@ -538,8 +538,19 @@ html {
   align-items: center;
   grid-template-columns: 1fr;
   gap: 1rem;
+  position: relative;
+}
+#portfolioSection .noProjectsMsg {
+  position: absolute;
+  top: 2vh;
+  font-size: var(--tagFontSize);
+  color: var(--guideColor);
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 #portfolioSection .projectCard .projectIMGContainer img {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;

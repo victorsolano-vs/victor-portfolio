@@ -160,7 +160,6 @@ function filterItems(category){
             return project.projectType === category 
         })
         renderProjects(filteredProjects)
-        console.log(filteredProjects)
     }
 
 }
@@ -168,31 +167,38 @@ function filterItems(category){
 function renderProjects(toRenderProj){
     let projectsContainer = document.querySelector('.projectsSection')
     let portfolioHTML = ''
-    
-    toRenderProj.forEach((project) => {
-        console.log(project.projectImages.thumbnailView);
-        portfolioHTML += `
-            <div class="projectCard">
-                <div class="projectIMGContainer">
-                    <img src="${project.projectImages.thumbnailView}" alt="" loading = 'lazy'>
-                </div>
 
-                <h3 class="projectTitle">
-                    ${project.projectName}
-                </h3>
-
-                <h3 class="projectType">
-                    ${project.projectType}
-                </h3>
-
-                <div class="projectLinks">
-                    <a href="${project.projectLiveLink}">Live Demo</a>
-                    <button>Learn More</button>
-                </div>
-            </div>
-        
+    if(toRenderProj.length === 0){
+        portfolioHTML = `
+            <p class = 'noProjectsMsg'>No projects yet! Currently creating!</p>
         `
-    })
+    } else {
+        toRenderProj.forEach((project) => {
+
+            portfolioHTML += `
+                <div class="projectCard">
+                    <div class="projectIMGContainer">
+                        <img src="${project.projectImages.thumbnailView}" alt="" loading = 'lazy'>
+                    </div>
+    
+                    <h3 class="projectTitle">
+                        ${project.projectName}
+                    </h3>
+    
+                    <h3 class="projectType">
+                        ${project.projectType}
+                    </h3>
+    
+                    <div class="projectLinks">
+                        <a href="${project.projectLiveLink}">Live Demo</a>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            `
+        })
+    }
+    
+
     
     
     projectsContainer.innerHTML = portfolioHTML

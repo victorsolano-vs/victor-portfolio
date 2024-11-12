@@ -119,22 +119,22 @@ export const projects = [
             pallete: 'source' 
         }
     } ,
-    {
-        projectName: 'design project',
-        projectType: 'UX/UI Design',
-        projectDescription: 'UI/UX description here',
-        projectTechStack: [
-            'Figma', 
-            'Adobe XD'
-        ],
-        projectLiveLink: 'www.example.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
-        }
-    },
+    // {
+    //     projectName: 'design project',
+    //     projectType: 'UX/UI Design',
+    //     projectDescription: 'UI/UX description here',
+    //     projectTechStack: [
+    //         'Figma', 
+    //         'Adobe XD'
+    //     ],
+    //     projectLiveLink: 'www.example.com',
+    //     projectImages: {
+    //         thumbnailView: './assets/projects/dribblepic.jpg',
+    //         mobileView: 'source',
+    //         desktopView: 'source',
+    //         pallete: 'source'
+    //     }
+    // },
     {
         projectName: 'app project',
         projectType: 'App Development',
