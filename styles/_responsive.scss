@@ -41,10 +41,15 @@
 
 }
 @media (min-width: $sz3){// 576px
-    // :root{
-    //     --subHeadingFontSize: 1.25rem; //20px
 
-    // }
+    #portfolioSection{
+        
+        .projectsSection{
+            max-width: 600px;
+            grid-template-columns: 1fr 1fr;
+
+        }
+    }
     
 }
 @media (min-width: 640px){// 640px
@@ -175,15 +180,15 @@
     }
 
     #portfolioSection{
-        // .sectionTitle{
-        //     text-align:left ;
-        //     // padding-left: 2vw;
-        //     max-width: 1055px;
-        //     margin-left: auto;
-        //     margin-right: auto;
-        // }
-    }
+        margin-top: 0;
+        padding-top: 4rem;
 
+        .projectsSection{
+            max-width: 850px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+    }
 }
 
 @media (min-width: $sz5){// 992px

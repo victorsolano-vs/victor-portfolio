@@ -1,5 +1,6 @@
 .navbar{
     @include frostedBackground;
+    border-bottom: 1px solid var(--accentColor);
 }
 
 .navbarContent{

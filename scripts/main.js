@@ -170,9 +170,28 @@ function renderProjects(toRenderProj){
     let portfolioHTML = ''
     
     toRenderProj.forEach((project) => {
-        portfolioHTML += `<p style = "color: red;">
-            ${project.projectName} AND ${project.projectType}
-        </p>`
+        console.log(project.projectImages.thumbnailView);
+        portfolioHTML += `
+            <div class="projectCard">
+                <div class="projectIMGContainer">
+                    <img src="${project.projectImages.thumbnailView}" alt="" loading = 'lazy'>
+                </div>
+
+                <h3 class="projectTitle">
+                    ${project.projectName}
+                </h3>
+
+                <h3 class="projectType">
+                    ${project.projectType}
+                </h3>
+
+                <div class="projectLinks">
+                    <a href="${project.projectLiveLink}">Live Demo</a>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        
+        `
     })
     
     

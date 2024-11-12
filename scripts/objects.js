@@ -113,6 +113,7 @@ export const projects = [
         projectLiveLink: 'www.google.com',
         projectSourceCode: 'www.github.com',
         projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
             mobileView: 'source',
             desktopView: 'source',
             pallete: 'source' 
@@ -128,6 +129,7 @@ export const projects = [
         ],
         projectLiveLink: 'www.example.com',
         projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
             mobileView: 'source',
             desktopView: 'source',
             pallete: 'source'
@@ -143,6 +145,72 @@ export const projects = [
         ],
         projectLiveLink: 'www.example.com',
         projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
+    }
+    ,
+    {
+        projectName: 'app project',
+        projectType: 'App Development',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
+    },
+    {
+        projectName: 'app project',
+        projectType: 'App Development',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
+    },
+    {
+        projectName: 'app project',
+        projectType: 'App Development',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: 'source',
+            desktopView: 'source',
+            pallete: 'source'
+        }
+    },
+    {
+        projectName: 'app project',
+        projectType: 'App Development',
+        projectDescription: 'UI/UX description here',
+        projectTechStack: [
+            'Figma', 
+            'Adobe XD'
+        ],
+        projectLiveLink: 'www.example.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
             mobileView: 'source',
             desktopView: 'source',
             pallete: 'source'
