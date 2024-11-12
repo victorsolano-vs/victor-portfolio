@@ -124,15 +124,46 @@ dropdownBtn.addEventListener('click', () => {
     categoryList.classList.toggle('showCategoryList')
 })
 
-
-// code to render projects
-let projectsContainer = document.querySelector('.projectsSection')
-let portfolioHTML = ''
-
-projects.forEach((project) => {
-    portfolioHTML += `<p>
-        ${project.projectName}
-    </p>`
+// make the selected text change the text on the main btn
+const categoryItems = document.querySelectorAll('.categoryList button')
+categoryItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        dropdownText.innerHTML = item.innerHTML
+        categoryList.classList.remove('showCategoryList')
+        filterItems(item.innerHTML)
+    })
 })
 
-projectsContainer.innerHTML = portfolioHTML
+
+// code to render projects
+renderProjects(projects)
+
+
+
+// filter project items on selection
+function filterItems(category){
+    if(category === 'All'){
+        renderProjects(projects)
+    } else {
+        let filteredProjects = projects.filter((project, index) => {
+            return project.projectType === category 
+        })
+        renderProjects(filteredProjects)
+        console.log(filteredProjects)
+    }
+
+}
+
+function renderProjects(toRenderProj){
+    let projectsContainer = document.querySelector('.projectsSection')
+    let portfolioHTML = ''
+    
+    toRenderProj.forEach((project) => {
+        portfolioHTML += `<p style = "color: white;">
+            ${project.projectName}
+        </p>`
+    })
+    
+    
+    projectsContainer.innerHTML = portfolioHTML
+}

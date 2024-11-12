@@ -460,7 +460,7 @@ a {
   background: var(--accentColor);
   color: var(--tagTextColor);
   width: 100%;
-  max-width: 450px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -484,7 +484,12 @@ a {
   transform: rotate(180deg);
 }
 #portfolioSection .categoryList {
-  max-width: 450px;
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
@@ -514,6 +519,9 @@ a {
 #portfolioSection .showCategoryList {
   opacity: 1;
   pointer-events: all;
+}
+#portfolioSection .projectFilterContainer {
+  position: relative;
 }
 
 html {

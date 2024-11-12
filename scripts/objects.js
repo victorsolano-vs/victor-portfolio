@@ -120,7 +120,7 @@ export const projects = [
     } ,
     {
         projectName: 'design project',
-        projectType: 'UI/UX Design',
+        projectType: 'UX/UI Design',
         projectDescription: 'UI/UX description here',
         projectTechStack: [
             'Figma', 
