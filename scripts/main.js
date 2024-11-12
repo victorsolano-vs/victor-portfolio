@@ -190,7 +190,7 @@ function renderProjects(toRenderProj){
                     </h3>
     
                     <div class="projectLinks">
-                        <a href="${project.projectLiveLink}">Live Demo</a>
+                        <a href="${project.projectLiveLink}">${project.projectType === 'UX/UI Design' ? 'View Design' : 'Live Demo' }</a>
                         <button>Learn More</button>
                     </div>
                 </div>

@@ -45,6 +45,7 @@
     .categoryList{
 
         position: absolute;
+        z-index: 100;
         top: 2.8rem;
         left: 0;
         right: 0;
@@ -127,6 +128,34 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+        .projectTitle{
+            // margin-top: 0.5rem;
+            color: var(--textHeadingColor);
+            font-weight: 600;
+            font-size: var(--blockTextFontSize);
+        }
+        .projectType{
+            font-size: var(--blockTextFontSize);
+            color: var(--textColor);
+            font-weight: 400;
+        }
+        .projectLinks{
+            margin-top: 0.8rem;
+            a{
+                @include buttonStyles;
+                font-size: 12px;
+
+            }
+            button{
+                @include buttonStyles;
+                font-size: 12px;
+                margin-left: 0.5rem;
+                border: 1px solid var(--buttonColor);
+                background: none;
+                color: var(--buttonColor);
+                cursor: pointer;
             }
         }
     }
