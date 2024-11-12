@@ -7,43 +7,74 @@
     }
 
     .dropdownListBtn{
-        background: var(--buttonColor);
-        color: var(--buttonTextColor);
+        background: var(--accentColor);
+        color: var(--tagTextColor);
         width: 100%;
 
-        display: inline-flex;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
         align-items: center;
         justify-content: space-between;
         
         border: none;
-        border-radius: 10px 10px 0 0;
-        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+
+        font-size: var(--buttonFontSize);
         
         cursor: pointer;
         svg{
+           $svgSize:16px;
+           height: $svgSize;
+           width: $svgSize;
+            transition: transform 0.5 ease;
             path{
-                stroke: var(--buttonTextColor);
+                stroke: var(--tagTextColor);
             }   
-            
         }
     }
 
+    .transformArrow{
+        transform: rotate(180deg);
+    }
+    
+
     .categoryList{
-        background: yellow;
+
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-top: 0.5rem;
+        opacity: 0;
         list-style: none;
-        background: var(--buttonColor);
-        border-radius: 0 0 10px 10px;
-        padding:0.5rem 1rem;
+        background: var(--accentColor);
+        border-radius: 10px;
+        padding:0.2rem;
+        transition: background $transitionDuration ease, opacity 0.1s ease-in;
+
         button{
             cursor: pointer;
-            padding: 0.3rem;
+            padding: 0.5rem 0.75rem;
             width: 100%;
             text-align: left;
             background: none;
             border: none;
-            // border: 1px var(--accentColor) solid;
-            color: var(--buttonTextColor);
+            border-radius: 10px;
+            color: var(--tagTextColor);
+            font-size: var(--buttonFontSize);
+            transition: background 0.3s ease-in-out;
+            &:hover{
+                background: var(--backgroundColor);
+            }
         }
+    }
+
+    .showCategoryList{
+        opacity: 1;
     }
 }
 

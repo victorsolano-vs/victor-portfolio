@@ -113,7 +113,16 @@ experience.forEach((exp) => {
 experienceContainer.innerHTML = experienceHTML
 
 
+// animation for projects filter
+const dropdownBtn = document.querySelector('.dropdownListBtn')
+const dropdownText = document.querySelector('.dropdownBtnText')
+const dropdownSvg = document.querySelector('.dropdownListBtn svg')
+const categoryList = document.querySelector('.categoryList')
 
+dropdownBtn.addEventListener('click', () => {
+    dropdownSvg.classList.toggle('transformArrow')
+    categoryList.classList.toggle('showCategoryList')
+})
 
 
 // code to render projects
