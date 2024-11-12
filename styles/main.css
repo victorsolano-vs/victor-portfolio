@@ -573,6 +573,10 @@ html {
     background: var(--buttonColor);
     color: var(--buttonTextColor);
   }
+  #portfolioSection .categoryList .activeCategory {
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
+  }
 }
 @media (min-width: 48rem) {
   #mobileNav {

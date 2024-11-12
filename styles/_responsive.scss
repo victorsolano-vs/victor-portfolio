@@ -69,7 +69,14 @@
                     color: var(--buttonTextColor);
                 }
             }
+
+            .activeCategory{
+                background: var(--buttonColor);
+                color: var(--buttonTextColor);
+            }
         }
+
+        
     }
     
 }

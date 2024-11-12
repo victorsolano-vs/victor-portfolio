@@ -126,10 +126,21 @@ dropdownBtn.addEventListener('click', () => {
 
 // make the selected text change the text on the main btn
 const categoryItems = document.querySelectorAll('.categoryList button')
+
+// default button
+const defaultCategory = document.querySelector('[data-category="all"]');
+defaultCategory.classList.add('activeCategory')
+
+
 categoryItems.forEach((item) => {
     item.addEventListener('click', () => {
+
+        categoryItems.forEach((btn) => {btn.classList.remove('activeCategory')})
+        item.classList.add('activeCategory')
+        
         dropdownText.innerHTML = item.innerHTML
         categoryList.classList.remove('showCategoryList')
+
         filterItems(item.innerHTML)
     })
 })
@@ -159,7 +170,7 @@ function renderProjects(toRenderProj){
     let portfolioHTML = ''
     
     toRenderProj.forEach((project) => {
-        portfolioHTML += `<p style = "color: white;">
+        portfolioHTML += `<p style = "color: red;">
             ${project.projectName} AND ${project.projectType}
         </p>`
     })
