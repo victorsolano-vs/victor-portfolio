@@ -52,7 +52,7 @@
         .tag{
             background: var(--accentColor);
             padding: 0.5rem 1rem;
-            border-radius: 20px;
+            border-radius: 8px;
             transition: background $transitionDuration ease;
             &:nth-child(1){
                 margin-right: 0.5rem;

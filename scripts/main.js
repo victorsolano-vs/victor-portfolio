@@ -1,4 +1,4 @@
-import { myStack, experience } from "./objects.js"
+import { myStack, experience, projects } from "./objects.js"
 
 // LIGHT/DARK THEME JS
 // code to toggle light/dark theme
@@ -82,24 +82,6 @@ cards.forEach((card) => {
 })
 
 
-
-// move watermark on mouse move
-// const watermark = document.querySelector('.watermark')
-
-// document.addEventListener('mousemove', (event) => {
-//     const centerX = window.innerWidth / 2
-//       const centerY = window.innerHeight / 2
-
-//       // Calculate how far the mouse is from the center
-//       const deltaX = (event.clientX - centerX) / 20
-//       const deltaY = (event.clientY - centerY) / 20
-
-//       // Apply transform to move text based on mouse position
-//       watermark.style.transform = `translate(${deltaX}px, ${deltaY}px)`
-// })
-
-
-
 // render experience array
 const experienceContainer = document.querySelector('.experienceContainer')
 
@@ -129,3 +111,19 @@ experience.forEach((exp) => {
 })
 
 experienceContainer.innerHTML = experienceHTML
+
+
+
+
+
+// code to render projects
+let projectsContainer = document.querySelector('.projectsSection')
+let portfolioHTML = ''
+
+projects.forEach((project) => {
+    portfolioHTML += `<p>
+        ${project.projectName}
+    </p>`
+})
+
+projectsContainer.innerHTML = portfolioHTML

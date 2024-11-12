@@ -231,7 +231,7 @@ a {
 #mainSection .skillTags .tag {
   background: var(--accentColor);
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 8px;
   transition: background 0.4s ease;
 }
 #mainSection .skillTags .tag:nth-child(1) {
@@ -247,7 +247,7 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 8px;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -362,7 +362,7 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 8px;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -428,7 +428,7 @@ a {
   background: var(--accentColor);
   color: var(--tagTextColor);
   padding: 0.3rem 1rem;
-  border-radius: 20px;
+  border-radius: 8px;
   transition: background 0.4s ease, color 0.4s ease;
 }
 #experienceSection .expTag:nth-child(1) {
@@ -447,6 +447,49 @@ a {
   font-size: var(--blockTextFontSize);
   transition: color 0.4s ease;
   list-style-position: inside;
+}
+
+#portfolioSection {
+  padding: 0 1.5rem;
+  margin-top: 5rem;
+}
+#portfolioSection .sectionTitle {
+  text-align: center;
+}
+#portfolioSection .dropdownListBtn {
+  background: var(--buttonColor);
+  color: var(--buttonTextColor);
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#portfolioSection .dropdownListBtn svg path {
+  stroke: var(--buttonTextColor);
+}
+#portfolioSection .categoryList {
+  background: yellow;
+  list-style: none;
+  background: var(--buttonColor);
+  border-radius: 0 0 10px 10px;
+  padding: 0.5rem 1rem;
+}
+#portfolioSection .categoryList button {
+  cursor: pointer;
+  padding: 0.3rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--buttonTextColor);
+}
+
+html {
+  margin-bottom: 10000px;
 }
 
 @media (min-width: 22.5rem) {

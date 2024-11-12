@@ -145,7 +145,18 @@
         }
     }
 
+    #portfolioSection{
+        // .sectionTitle{
+        //     text-align:left ;
+        //     // padding-left: 2vw;
+        //     max-width: 1055px;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        // }
+    }
+
 }
+
 @media (min-width: $sz5){// 992px
 
     #mainSection{
@@ -165,6 +176,9 @@
                 transform: rotate(-75deg);
             }
         }
+    }
+
+    #portfolioSection{
     }
     
 }
@@ -195,7 +209,8 @@
     }
 
 
-    
+    #portfolioSection{
+    }
 
 }
 

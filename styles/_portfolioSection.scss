@@ -1,0 +1,52 @@
+#portfolioSection{
+    padding: 0 1.5rem;
+    margin-top: 5rem;
+
+    .sectionTitle{
+        text-align: center;
+    }
+
+    .dropdownListBtn{
+        background: var(--buttonColor);
+        color: var(--buttonTextColor);
+        width: 100%;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        border: none;
+        border-radius: 10px 10px 0 0;
+        padding: 0.5rem 1rem;
+        
+        cursor: pointer;
+        svg{
+            path{
+                stroke: var(--buttonTextColor);
+            }   
+            
+        }
+    }
+
+    .categoryList{
+        background: yellow;
+        list-style: none;
+        background: var(--buttonColor);
+        border-radius: 0 0 10px 10px;
+        padding:0.5rem 1rem;
+        button{
+            cursor: pointer;
+            padding: 0.3rem;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            // border: 1px var(--accentColor) solid;
+            color: var(--buttonTextColor);
+        }
+    }
+}
+
+html{
+    margin-bottom: 10000px;
+}
