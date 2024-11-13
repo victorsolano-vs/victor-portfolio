@@ -25,4 +25,45 @@
             }
         }
     }
+
+    #contactForm{
+        max-width: 300px;
+        margin: 3rem auto 6rem auto;
+    }
+
+    .formInput{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submitBtn{
+        @include buttonStyles;
+        border: none;
+        cursor: pointer;
+    }
+
+    label{
+        color: var(--textHeadingColor);
+        font-size: var(--subHeadingFontSize);
+    }
+
+    input, textarea{
+        background: var(--accentColor);
+        border: none;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        transition: border-color 0.3s ease;
+        color: var(--textHeadingColor);
+        &:focus{
+            outline: none;
+            border-color: red;
+        }
+        
+    }
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px var(--accentColor) inset !important; 
+        -webkit-text-fill-color: var(--textHeadingColor) !important;
+    }
 }
