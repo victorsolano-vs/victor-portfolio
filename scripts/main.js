@@ -137,6 +137,7 @@ categoryItems.forEach((item) => {
 
         categoryItems.forEach((btn) => {btn.classList.remove('activeCategory')})
         item.classList.add('activeCategory')
+        dropdownSvg.classList.toggle('transformArrow')
         
         dropdownText.innerHTML = item.innerHTML
         categoryList.classList.remove('showCategoryList')
