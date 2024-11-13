@@ -538,7 +538,7 @@ html {
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
   position: relative;
 }
 #portfolioSection .noProjectsMsg {
@@ -549,6 +549,11 @@ html {
   display: block;
   width: 100%;
   text-align: center;
+}
+#portfolioSection .projectCard {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 #portfolioSection .projectCard .projectIMGContainer img {
   border-radius: 10px;
@@ -629,6 +634,10 @@ html {
 }
 #portfolioSection .projectCard .projectLinks button:hover svg {
   transform: rotate(0);
+}
+#portfolioSection .projectCardShow {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-width: 22.5rem) {

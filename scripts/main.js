@@ -203,4 +203,11 @@ function renderProjects(toRenderProj){
     
     
     projectsContainer.innerHTML = portfolioHTML
+
+    // add animation
+    document.querySelectorAll('.projectCard').forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('projectCardShow')
+        }, index * 100)
+    })
 }
