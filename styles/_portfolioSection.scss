@@ -1,7 +1,7 @@
 #portfolioSection{
     padding: 0 1.5rem;
     margin-top: 5rem;
-    min-height: 800px;
+    min-height: 50rem;
 
     .sectionTitle{
         text-align: center;
@@ -12,7 +12,7 @@
         color: var(--tagTextColor);
         width: 100%;
 
-        max-width: 300px;
+        max-width: 18.75rem;
         margin-left: auto;
         margin-right: auto;
 
@@ -28,7 +28,7 @@
         
         cursor: pointer;
         svg{
-           $svgSize:16px;
+           $svgSize:1rem;
            height: $svgSize;
            width: $svgSize;
             transition: transform 0.5 ease;
@@ -52,7 +52,7 @@
         right: 0;
 
 
-        max-width: 300px;
+        max-width: 18.75rem;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -99,7 +99,7 @@
     // styles for the project cards
     .projectsSection{
         width:100%;
-        max-width: 400px;
+        max-width: 25rem;
         margin: 0 auto;
         margin-top: 2rem;
 
@@ -149,12 +149,12 @@
             margin-top: 0.8rem;
             a{
                 @include buttonStyles;
-                font-size: 12px;
+                font-size: 0.75rem;
 
             }
             button{
                 @include buttonStyles;
-                font-size: 12px;
+                font-size: 0.75rem;
                 margin-left: 0.5rem;
                 border: 1px solid var(--buttonColor);
                 background: none;

@@ -12,7 +12,7 @@
     #mainSection{
         .location{
             svg{
-                $svgSize: 16px;
+                $svgSize: 1rem;
                 width: $svgSize;
                 height: $svgSize;
             }
@@ -20,7 +20,7 @@
 
         .viewProjectsCTA{
             svg{
-                $svgSize: 19px;
+                $svgSize: 1.1875rem;
                 width: $svgSize;
                 height: $svgSize;
             }
@@ -45,7 +45,7 @@
     #portfolioSection{
         
         .projectsSection{
-            max-width: 600px;
+            max-width: 37.5rem;
             grid-template-columns: 1fr 1fr;
 
         }
@@ -58,7 +58,7 @@
             display: none;
         }
         .categoryList{
-            max-width: 500px;
+            max-width: 31.25rem;
             position: static;
             opacity: 1;
             pointer-events: all;
@@ -169,7 +169,7 @@
         }
 
         .expTitleContainer{
-            min-width: 400px;
+            min-width: 25rem;
             align-items: flex-start;
         }
 
@@ -180,17 +180,17 @@
     }
 
     #portfolioSection{
-        margin-top: 0;
+        margin-top: 4rem;
         padding-top: 4rem;
 
         .projectsSection{
-            max-width: 850px;
+            max-width: 53.125rem;
             grid-template-columns: 1fr 1fr 1fr;
 
         }
     }
     #contactSection{
-        margin-top: 0;
+        margin-top: 4rem;
         padding-top: 4rem;
     }
 }
@@ -246,12 +246,12 @@
     }
     #mainSection{
         .aboutMeText{
-            max-width: 400px;
+            max-width: 25rem;
         }
 
         .langCard{
             padding: 2rem 2.5rem;
-            min-width: 120px;
+            min-width: 7.5rem;
         }
     }
 
