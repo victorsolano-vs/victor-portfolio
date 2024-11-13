@@ -135,6 +135,19 @@ html {
   font-size: var(--linksFontSize);
   transition: color 0.4s ease;
 }
+.navbarContent .navbarExtraBtns {
+  display: inline-flex;
+  align-items: center;
+}
+.navbarContent .navbarExtraBtns a {
+  margin-right: 1.5rem;
+  color: var(--textHeadingColor);
+  transition: color 0.4s ease, transform 0.3s ease;
+  transform: scale(1);
+}
+.navbarContent .navbarExtraBtns a:hover {
+  transform: scale(0.9);
+}
 .navbarContent #themeToggle {
   outline: none;
   border: none;

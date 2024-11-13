@@ -36,6 +36,20 @@
             }
     }
 
+    .navbarExtraBtns{
+        display: inline-flex;
+        align-items: center;
+        a{
+            margin-right: 1.5rem;
+            color: var(--textHeadingColor);
+            transition: color $transitionDuration ease, transform 0.3s ease;
+            transform: scale(1);
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+
     #themeToggle{
         outline: none;
         border: none;
