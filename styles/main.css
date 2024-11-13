@@ -860,6 +860,10 @@ html {
     max-width: 850px;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #contactSection {
+    margin-top: 0;
+    padding-top: 4rem;
+  }
 }
 @media (min-width: 62rem) {
   #mainSection .rightSection {
@@ -876,6 +880,12 @@ html {
     margin-top: -10px;
     display: block;
     transform: rotate(-75deg);
+  }
+  #contactSection .socialLinks {
+    flex-direction: row;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 75rem) {
