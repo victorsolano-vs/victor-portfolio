@@ -55,6 +55,7 @@
         margin-bottom: 1rem;
         transition: border-color 0.3s ease;
         color: var(--textHeadingColor);
+        resize: none;
         &:focus{
             outline: none;
             border-color: red;

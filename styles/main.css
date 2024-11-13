@@ -715,6 +715,7 @@ html {
   margin-bottom: 1rem;
   transition: border-color 0.3s ease;
   color: var(--textHeadingColor);
+  resize: none;
 }
 #contactSection input:focus, #contactSection textarea:focus {
   outline: none;
