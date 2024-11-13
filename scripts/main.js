@@ -199,9 +199,6 @@ function renderProjects(toRenderProj){
         })
     }
     
-
-    
-    
     projectsContainer.innerHTML = portfolioHTML
 
     // add animation
@@ -211,3 +208,24 @@ function renderProjects(toRenderProj){
         }, index * 100)
     })
 }
+
+
+// adding bounce animation to font awesome icons
+function addBounceAnimation(selector, iconClass) {
+    const element = document.querySelector(selector)
+    const icon = document.querySelector(iconClass)
+
+    element.addEventListener('mouseenter', () => {
+        icon.classList.add('fa-bounce')
+    })
+
+    element.addEventListener('mouseleave', () => {
+        icon.classList.remove('fa-bounce')
+    })
+}
+
+// Call the function for each icon
+addBounceAnimation('.phoneNumber', '.fa-phone')
+addBounceAnimation('.github', '.fa-github')
+addBounceAnimation('.email', '.fa-envelope')
+addBounceAnimation('.linkedin', '.fa-linkedin')

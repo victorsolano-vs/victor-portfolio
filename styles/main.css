@@ -457,6 +457,7 @@ html {
 #portfolioSection {
   padding: 0 1.5rem;
   margin-top: 5rem;
+  min-height: 800px;
 }
 #portfolioSection .sectionTitle {
   text-align: center;
@@ -545,7 +546,7 @@ html {
   position: absolute;
   top: 2vh;
   font-size: var(--tagFontSize);
-  color: var(--guideColor);
+  color: var(--textColor);
   display: block;
   width: 100%;
   text-align: center;
@@ -638,6 +639,32 @@ html {
 #portfolioSection .projectCardShow {
   opacity: 1;
   transform: translateY(0);
+}
+
+#contactSection {
+  padding: 0 1.5rem;
+  margin-top: 5rem;
+}
+#contactSection .sectionTitle {
+  text-align: center;
+}
+#contactSection .socialLinks {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+#contactSection .socialLinks a {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--tagTextColor);
+  font-weight: 400;
+  font-size: var(--buttonFontSize);
+}
+#contactSection .socialLinks a i {
+  margin-right: 0.3rem;
 }
 
 @media (min-width: 22.5rem) {

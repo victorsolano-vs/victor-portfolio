@@ -1,0 +1,28 @@
+#contactSection{
+    padding: 0 1.5rem;
+    margin-top: 5rem;
+
+    .sectionTitle{
+        text-align: center;
+    }
+
+    .socialLinks{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+        a{
+            text-align: center;
+            text-decoration: underline;
+            color: var(--tagTextColor);
+            font-weight: 400;
+            font-size: var(--buttonFontSize);
+            i{
+                margin-right: 0.3rem;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 #portfolioSection{
     padding: 0 1.5rem;
     margin-top: 5rem;
+    min-height: 800px;
 
     .sectionTitle{
         text-align: center;
@@ -115,7 +116,7 @@
         position: absolute;
         top: 2vh;
         font-size: var(--tagFontSize);
-        color:var(--guideColor) ;
+        color:var(--textColor) ;
         display: block;
         width: 100%;
         text-align: center;
