@@ -53,7 +53,7 @@
         .tag{
             background: var(--accentColor);
             padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
+            border-radius: 3.125rem;
             transition: background $transitionDuration ease;
             &:nth-child(1){
                 margin-right: 0.5rem;

@@ -9,6 +9,7 @@
     --backgroundColorRGB: 18,18,18;
     --accentColor:  #1e1e1f; //background color for tags, lang card bg, form input bg
     --guideColor: #464748; //color for guideline in exp section
+    --primaryColor: #EC5540;
 
     --buttonColor: #ffff; //bg for CTAs
     --buttonTextColor: #1e1e1f; //text color for CTAs
@@ -25,7 +26,7 @@
     --linksFontSize: 0.75rem; //12px
     --buttonFontSize: 0.75rem; //12px
 }
-
+// new primary color #EC5540
 
 [data-theme = 'light']{
     --backgroundColor: #ffffff;
@@ -106,6 +107,7 @@ a{
 }
 
 @mixin frostedBackground{
+    background: var(--backgroundColorRGB);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
@@ -114,7 +116,7 @@ a{
     display: inline-flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 3.125rem;
 
     background: var(--buttonColor);
     color: var(--buttonTextColor);
@@ -133,6 +135,7 @@ a{
         
         path{
             stroke: var(--buttonTextColor);
+            // stroke: var(--primaryColor);
             transition: transform $transitionDuration ease, stroke $transitionDuration ease;
         }
     }

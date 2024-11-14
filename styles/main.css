@@ -4,6 +4,7 @@
   --backgroundColorRGB: 18,18,18;
   --accentColor: #1e1e1f;
   --guideColor: #464748;
+  --primaryColor: #EC5540;
   --buttonColor: #ffff;
   --buttonTextColor: #1e1e1f;
   --textColor: #d6d6d6;
@@ -149,6 +150,7 @@ body {
 }
 
 .navbar {
+  background: var(--backgroundColorRGB);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--accentColor);
@@ -236,6 +238,7 @@ body {
   z-index: 99;
   border-top: 1px solid var(--accentColor);
   border-radius: 15px 15px 0 0;
+  background: var(--backgroundColorRGB);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -308,7 +311,7 @@ body {
 #mainSection .skillTags .tag {
   background: var(--accentColor);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 3.125rem;
   transition: background 0.4s ease;
 }
 #mainSection .skillTags .tag:nth-child(1) {
@@ -324,7 +327,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -439,7 +442,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -469,7 +472,7 @@ body {
   margin-left: 0.5rem;
 }
 #experienceSection .rightSection::before {
-  background: var(--guideColor);
+  background: var(--primaryColor);
   position: absolute;
   content: "";
   width: 2px;
@@ -484,7 +487,7 @@ body {
 }
 #experienceSection .expBlock::before {
   border-radius: 50px;
-  border: var(--guideColor) 2px solid;
+  border: var(--primaryColor) 2px solid;
   background: var(--backgroundColor);
   transition: background 0.4s ease, border 0.4s ease;
   content: "";
@@ -505,7 +508,7 @@ body {
   background: var(--accentColor);
   color: var(--tagTextColor);
   padding: 0.3rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   transition: background 0.4s ease, color 0.4s ease;
 }
 #experienceSection .expTag:nth-child(1) {
@@ -544,7 +547,7 @@ body {
   align-items: center;
   justify-content: space-between;
   border: none;
-  border-radius: 10px;
+  border-radius: 3.125rem;
   padding: 0.75rem 1rem;
   font-size: var(--buttonFontSize);
   cursor: pointer;
@@ -586,7 +589,7 @@ body {
   text-align: left;
   background: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 3.125rem;
   color: var(--tagTextColor);
   font-size: var(--buttonFontSize);
   transition: background 0.3s ease-in-out;
@@ -650,7 +653,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -678,7 +681,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
@@ -749,7 +752,7 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3.125rem;
   background: var(--buttonColor);
   color: var(--buttonTextColor);
   font-size: var(--buttonFontSize);
