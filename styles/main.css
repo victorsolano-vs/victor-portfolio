@@ -936,6 +936,7 @@ html, body {
   }
   #mainSection .watermark {
     bottom: -1rem;
+    left: -5rem;
   }
   #mainSection .watermark .text {
     font-size: 150px;
