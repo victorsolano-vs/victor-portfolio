@@ -116,6 +116,8 @@
 
     // main Section turn to row layout for bigger screen
     #mainSection{
+        min-height: initial;
+        height: 100vh;
         padding-top: 13rem;
         display: flex;
         align-items: flex-start;

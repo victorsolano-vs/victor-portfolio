@@ -192,7 +192,7 @@ function renderProjects(toRenderProj){
     
                     <div class="projectLinks">
                         <a href="${project.projectLiveLink}">${project.projectType === 'UX/UI Design' ? 'View Design' : 'Live Demo' }</a>
-                        <button>Learn More</button>
+                        <button class = 'projectLearnMore'>Learn More</button>
                     </div>
                 </div>
             `
@@ -207,6 +207,8 @@ function renderProjects(toRenderProj){
             card.classList.add('projectCardShow')
         }, index * 100)
     })
+
+    setModalTriggers(toRenderProj)
 }
 
 
@@ -229,3 +231,43 @@ addBounceAnimation('.phoneNumber', '.fa-phone')
 addBounceAnimation('.github', '.fa-github')
 addBounceAnimation('.email', '.fa-envelope')
 addBounceAnimation('.linkedin', '.fa-linkedin')
+
+// modal JS
+const modalContainer = document.querySelector('.modal')
+const exitBtn = document.querySelector('#modalExitBtn')
+const modalOverlay = document.querySelector('#overlay')
+
+
+function setModalTriggers(toRenderProj){
+    const modalTriggers = document.querySelectorAll('.projectLearnMore')
+    modalTriggers.forEach((trigger, idx) => {
+        trigger.addEventListener('click', () => {
+            modalOverlay.style.opacity = '0.8'
+            modalOverlay.style.pointerEvents = 'all'
+            modalContainer.classList.add('modalShow')
+    
+            renderModal(toRenderProj, idx)
+            
+        })
+    })
+}
+
+
+
+exitBtn.addEventListener('click', () => {
+    modalOverlay.style.opacity = '0'
+    modalOverlay.style.pointerEvents = 'none'
+    modalContainer.classList.remove('modalShow')
+})
+
+function renderModal(toRenderProj, idx){
+    console.log('selected project index: ', idx)
+    console.log(toRenderProj)
+
+    document.querySelector('.modalContent').innerHTML = `
+        <p>${toRenderProj[idx].projectName}</p>
+        <p>${toRenderProj[idx].projectType}</p>
+    `
+
+
+}
