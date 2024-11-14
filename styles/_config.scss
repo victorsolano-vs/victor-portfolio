@@ -175,8 +175,67 @@ a{
 
 html{
     margin-bottom: 60px;
+    // overflow-x: hidden;
 }
 
 body{
     overflow-x: hidden;
+}
+
+
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+.watermark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20em;
+    z-index: -1;
+    pointer-events: none;
+    transform: rotate(-25deg) translate(-65rem, -40rem);
+
+    .text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+            span{
+                text-transform: uppercase;
+                will-change: transform;
+                transform: translateX(0);
+                white-space: nowrap;
+                animation: marquee 30s linear infinite;
+                
+                font-size: 100px;
+                font-weight: 700;
+                color: var(--accentColor);
+                transition: color $transitionDuration ease;
+            }
+
+            &:nth-child(1){
+                span{
+                    animation: marquee 30s linear infinite;
+                }
+            }
+            &:nth-child(2){
+                span{
+                    animation: marquee 35s linear infinite;
+                }
+            }
+            &:nth-child(3){
+                span{
+                    animation: marquee 30s linear infinite;
+                }
+            }
+    }
 }

@@ -4,21 +4,7 @@
     
     padding: 0 1.5rem;
     padding-top: 1.875rem;
-    .watermark{
-        position: absolute;
-        left: 0;
-        bottom: 5rem;
-        z-index: -1;
-        pointer-events: none;
-        .text{
-            font-size: 100px;
-            font-weight: 600;
-            text-wrap: nowrap;
-            opacity: 0.3;
-            color: var(--accentColor);
-            transition: color $transitionDuration ease;
-        }
-    }
+    // overflow: hidden;
 
     .leftSection{
         display: flex;
