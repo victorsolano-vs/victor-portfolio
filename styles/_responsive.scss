@@ -10,6 +10,7 @@
     }
 
     #mainSection{
+
         .location{
             svg{
                 $svgSize: 1rem;
@@ -198,6 +199,12 @@
 @media (min-width: $sz5){// 992px
 
     #mainSection{
+        .watermark{
+            bottom: 2rem;
+            .text{
+                font-size: 150px;
+            }
+        }
         .rightSection{
             flex-direction: row;
         }
@@ -245,6 +252,12 @@
         --subHeadingFontSize: 1.25rem; //20px
     }
     #mainSection{
+        .watermark{
+            bottom: -1rem;
+            .text{
+                font-size: 150px;
+            }
+        }
         .aboutMeText{
             max-width: 25rem;
         }

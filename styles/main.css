@@ -89,6 +89,10 @@ html {
   margin-bottom: 60px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .navbar {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -208,6 +212,21 @@ html {
   position: relative;
   padding: 0 1.5rem;
   padding-top: 1.875rem;
+}
+#mainSection .watermark {
+  position: absolute;
+  left: 0;
+  bottom: 5rem;
+  z-index: -1;
+  pointer-events: none;
+}
+#mainSection .watermark .text {
+  font-size: 100px;
+  font-weight: 600;
+  text-wrap: nowrap;
+  opacity: 0.3;
+  color: var(--accentColor);
+  transition: color 0.4s ease;
 }
 #mainSection .leftSection {
   display: flex;
@@ -878,6 +897,12 @@ html {
   }
 }
 @media (min-width: 62rem) {
+  #mainSection .watermark {
+    bottom: 2rem;
+  }
+  #mainSection .watermark .text {
+    font-size: 150px;
+  }
   #mainSection .rightSection {
     flex-direction: row;
   }
@@ -908,6 +933,12 @@ html {
     --linksFontSize: 0.875rem;
     --buttonFontSize: 0.875rem;
     --subHeadingFontSize: 1.25rem;
+  }
+  #mainSection .watermark {
+    bottom: -1rem;
+  }
+  #mainSection .watermark .text {
+    font-size: 150px;
   }
   #mainSection .aboutMeText {
     max-width: 25rem;
