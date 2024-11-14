@@ -192,49 +192,63 @@ body{
       transform: translateX(-100%);
     }
   }
+@keyframes marqueeReverse {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 
 
 
 .watermark{
     position: absolute;
-    top: 0;
+    top: 65%;
     left: 0;
-    line-height: 20em;
     z-index: -1;
     pointer-events: none;
-    transform: rotate(-25deg) translate(-65rem, -40rem);
+    max-width: 100vw;
 
     .text{
         display: flex;
         align-items: center;
         justify-content: flex-start;
         overflow: hidden;
+        font-size: 100px;
+
+        &:nth-child(2){
+            justify-content: flex-end;
+        }
             span{
                 text-transform: uppercase;
                 will-change: transform;
                 transform: translateX(0);
                 white-space: nowrap;
-                animation: marquee 30s linear infinite;
+                text-wrap: nowrap;
+                // animation: marquee 30s linear infinite;
                 
-                font-size: 100px;
-                font-weight: 700;
+                
+                font-weight: 500;
                 color: var(--accentColor);
+                opacity: 0.65;
                 transition: color $transitionDuration ease;
             }
 
             &:nth-child(1){
                 span{
-                    animation: marquee 30s linear infinite;
+                    animation: marquee 25s linear infinite;
                 }
             }
             &:nth-child(2){
                 span{
-                    animation: marquee 35s linear infinite;
+                    animation: marqueeReverse 25s linear infinite;
                 }
             }
             &:nth-child(3){
                 span{
-                    animation: marquee 30s linear infinite;
+                    animation: marquee 25s linear infinite;
                 }
             }
     }

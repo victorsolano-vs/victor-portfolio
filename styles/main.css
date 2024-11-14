@@ -101,40 +101,51 @@ body {
     transform: translateX(-100%);
   }
 }
+@keyframes marqueeReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .watermark {
   position: absolute;
-  top: 0;
+  top: 65%;
   left: 0;
-  line-height: 20em;
   z-index: -1;
   pointer-events: none;
-  transform: rotate(-25deg) translate(-65rem, -40rem);
+  max-width: 100vw;
 }
 .watermark .text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  font-size: 100px;
+}
+.watermark .text:nth-child(2) {
+  justify-content: flex-end;
 }
 .watermark .text span {
   text-transform: uppercase;
   will-change: transform;
   transform: translateX(0);
   white-space: nowrap;
-  animation: marquee 30s linear infinite;
-  font-size: 100px;
-  font-weight: 700;
+  text-wrap: nowrap;
+  font-weight: 500;
   color: var(--accentColor);
+  opacity: 0.65;
   transition: color 0.4s ease;
 }
 .watermark .text:nth-child(1) span {
-  animation: marquee 30s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 .watermark .text:nth-child(2) span {
-  animation: marquee 35s linear infinite;
+  animation: marqueeReverse 25s linear infinite;
 }
 .watermark .text:nth-child(3) span {
-  animation: marquee 30s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .navbar {
@@ -843,6 +854,9 @@ body {
   }
 }
 @media (min-width: 48rem) {
+  .watermark {
+    top: 55%;
+  }
   #mobileNav {
     pointer-events: none;
     display: none;
@@ -926,9 +940,6 @@ body {
   }
 }
 @media (min-width: 62rem) {
-  #mainSection .watermark .text {
-    font-size: 150px;
-  }
   #mainSection .rightSection {
     flex-direction: row;
   }
@@ -960,11 +971,8 @@ body {
     --buttonFontSize: 0.875rem;
     --subHeadingFontSize: 1.25rem;
   }
-  #mainSection .watermark {
-    left: -5rem;
-  }
-  #mainSection .watermark .text {
-    font-size: 150px;
+  .watermark {
+    top: 60%;
   }
   #mainSection .aboutMeText {
     max-width: 25rem;

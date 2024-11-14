@@ -87,6 +87,9 @@
     
 }
 @media (min-width: $sz4){// 768px
+    .watermark{
+       top: 55%;
+    }
     // hiding fixed mobile nav
     #mobileNav{
         pointer-events: none;
@@ -199,12 +202,7 @@
 @media (min-width: $sz5){// 992px
 
     #mainSection{
-        .watermark{
-            // bottom: 2rem;
-            .text{
-                font-size: 150px;
-            }
-        }
+
         .rightSection{
             flex-direction: row;
         }
@@ -251,14 +249,11 @@
         
         --subHeadingFontSize: 1.25rem; //20px
     }
+    .watermark{
+        top: 60%;
+    }
     #mainSection{
-        .watermark{
-            // bottom: -1rem;
-            left: -5rem;
-            .text{
-                font-size: 150px;
-            }
-        }
+        
         .aboutMeText{
             max-width: 25rem;
         }
