@@ -10,6 +10,7 @@
   --textColor: #d6d6d6;
   --tagTextColor: #ffffff;
   --textHeadingColor: #ffff;
+  --modalHeadingFontSize: 1.5rem;
   --headingFontSize: 2.188rem;
   --blockTextFontSize: 0.75rem;
   --tagFontSize: 0.688rem;
@@ -838,6 +839,11 @@ body {
   margin: 3rem auto 0 auto;
   text-align: center;
 }
+.modal .modalContent .modalTitle {
+  font-size: 24px;
+  color: var(--textHeadingColor);
+  font-weight: 500;
+}
 
 .projectMainInfo .tagsBtnsSection {
   display: flex;
@@ -897,6 +903,7 @@ body {
 .projectMainInfo .projectDescription {
   color: var(--textColor);
   font-size: var(--blockTextFontSize);
+  margin: 1rem 0;
 }
 
 #overlay {

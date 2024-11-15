@@ -43,6 +43,12 @@
         margin: 3rem auto 0 auto;
         text-align: center;
 
+        .modalTitle{
+            font-size: 24px;
+            color: var(--textHeadingColor);
+            font-weight: 500;
+        }
+
     }
 
 }
@@ -90,6 +96,7 @@
     .projectDescription{
         color: var(--textColor);
         font-size: var(--blockTextFontSize);
+        margin: 1rem 0;
     }
 }
 

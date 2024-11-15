@@ -107,7 +107,7 @@ function renderModal(toRenderProj, idx){
 
     document.querySelector('.modalContent').innerHTML = `
     <div class = 'projectMainInfo'>
-        <h1 class = 'sectionTitle'>
+        <h1 class = 'modalTitle'>
             ${proj.projectName}
         </h1>
         <div class = 'tagsBtnsSection'>
