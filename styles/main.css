@@ -927,6 +927,10 @@ body {
   pointer-events: none;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  outline: none;
+}
+#overlay:focus {
+  outline: none;
 }
 
 .modalShow {
