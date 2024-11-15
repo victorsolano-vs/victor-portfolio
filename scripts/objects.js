@@ -102,118 +102,123 @@ export const experience = [
 ]
 
 export const projects = [
-    // {
-    //     projectName: 'test',
-    //     projectType: 'Web Development',
-    //     projectDescription: 'blah blah blah',
-    //     projectTechStack: [
-    //         'React',
-    //         'SASS'
-    //     ],
-    //     projectLiveLink: 'www.google.com',
-    //     projectSourceCode: 'www.github.com',
-    //     projectImages: {
-    //         thumbnailView: './assets/projects/dribblepic.jpg',
-    //         mobileView: 'source',
-    //         desktopView: 'source',
-    //         pallete: 'source' 
-    //     }
-    // } ,
     {
-        projectName: 'design project',
+        projectName: 'E-commerce Redesign',
         projectType: 'UX/UI Design',
-        projectDescription: 'UI/UX description here',
+        projectDescription: 'A modern redesign of an e-commerce website focusing on user experience and visual appeal.',
         projectTechStack: [
-            'Figma', 
-            'Adobe XD'
+            'Figma',
+            'Adobe XD',
+            'Sketch'
         ],
-        projectLiveLink: 'www.example.com',
+        projectLiveLink: 'https://www.ecommerce-redesign.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
-        projectName: 'app project',
+        projectName: 'Task Manager App',
         projectType: 'App Development',
-        projectDescription: 'UI/UX description here',
+        projectDescription: 'A task management app to help users organize and prioritize their daily tasks effectively.',
         projectTechStack: [
-            'Figma', 
-            'Adobe XD'
+            'React Native',
+            'JavaScript',
+            'Expo'
         ],
-        projectLiveLink: 'www.example.com',
+        projectLiveLink: 'https://www.taskmanagerapp.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
-        }
-    }
-    ,
-    {
-        projectName: 'app project',
-        projectType: 'App Development',
-        projectDescription: 'UI/UX description here',
-        projectTechStack: [
-            'Figma', 
-            'Adobe XD'
-        ],
-        projectLiveLink: 'www.example.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
-        projectName: 'app project',
-        projectType: 'App Development',
-        projectDescription: 'UI/UX description here',
+        projectName: 'Portfolio Website',
+        projectType: 'Web Development',
+        projectDescription: 'A personal portfolio showcasing projects and skills, built with responsive design principles.',
         projectTechStack: [
-            'Figma', 
-            'Adobe XD'
+            'HTML',
+            'CSS',
+            'JavaScript'
         ],
-        projectLiveLink: 'www.example.com',
+        projectLiveLink: 'https://www.portfolio-website.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
-        projectName: 'app project',
-        projectType: 'App Development',
-        projectDescription: 'UI/UX description here',
+        projectName: 'Social Media Dashboard',
+        projectType: 'UX/UI Design',
+        projectDescription: 'A dashboard for managing and tracking social media analytics, focused on clean UI and accessibility.',
         projectTechStack: [
-            'Figma', 
-            'Adobe XD'
+            'Figma',
+            'Adobe XD',
+            'InVision'
         ],
-        projectLiveLink: 'www.example.com',
+        projectLiveLink: 'https://www.socialmedia-dashboard.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
-        projectName: 'app project',
+        projectName: 'Weather App',
         projectType: 'App Development',
-        projectDescription: 'UI/UX description here',
+        projectDescription: 'A mobile app providing weather forecasts and real-time updates with a user-friendly design.',
         projectTechStack: [
-            'Figma', 
-            'Adobe XD'
+            'Flutter',
+            'Dart',
+            'Firebase'
         ],
-        projectLiveLink: 'www.example.com',
+        projectLiveLink: 'https://www.weatherapp.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: 'source',
-            desktopView: 'source',
-            pallete: 'source'
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
+        }
+    },
+    {
+        projectName: 'Recipe Blog Website',
+        projectType: 'Web Development',
+        projectDescription: 'A website showcasing a variety of recipes with advanced search and filtering options.',
+        projectTechStack: [
+            'React',
+            'CSS',
+            'Node.js'
+        ],
+        projectLiveLink: 'https://www.recipeblog.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
+        }
+    },
+    {
+        projectName: 'Virtual Art Gallery',
+        projectType: 'UX/UI Design',
+        projectDescription: 'A virtual gallery experience showcasing digital art pieces with immersive visuals.',
+        projectTechStack: [
+            'Adobe XD',
+            'Figma',
+            'Blender'
+        ],
+        projectLiveLink: 'https://www.virtualartgallery.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
+            mobileView: './assets/projects/dribblepic.jpg',
+            desktopView: './assets/projects/dribblepic.jpg',
+            pallete: './assets/projects/dribblepic.jpg'
         }
     }
 ]
