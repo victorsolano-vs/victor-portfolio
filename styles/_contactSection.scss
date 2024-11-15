@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.5rem;
+        
 
         a{
             text-align: center;
@@ -20,7 +21,13 @@
             color: var(--tagTextColor);
             font-weight: 400;
             font-size: var(--buttonFontSize);
+            &:hover{
+                i{
+                    color: var(--primaryColor);
+                }
+            }
             i{
+                transition: color $transitionDuration ease;
                 margin-right: 0.3rem;
             }
         }

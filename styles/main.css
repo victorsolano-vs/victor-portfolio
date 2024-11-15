@@ -173,6 +173,7 @@ body {
   transition: color 0.4s ease, transform 0.5s ease;
 }
 .navbarContent .logo:hover {
+  color: var(--primaryColor);
   transform: scale(0.9);
 }
 .navbarContent .linksContent {
@@ -198,6 +199,9 @@ body {
   font-size: var(--linksFontSize);
   transition: color 0.4s ease;
 }
+.navbarContent .linksContent li:hover a {
+  color: var(--primaryColor);
+}
 .navbarContent .navbarExtraBtns {
   display: inline-flex;
   align-items: center;
@@ -209,6 +213,7 @@ body {
   transform: scale(1);
 }
 .navbarContent .navbarExtraBtns a:hover {
+  color: var(--primaryColor);
   transform: scale(0.9);
 }
 .navbarContent #themeToggle {
@@ -739,7 +744,11 @@ body {
   font-weight: 400;
   font-size: var(--buttonFontSize);
 }
+#contactSection .socialLinks a:hover i {
+  color: var(--primaryColor);
+}
 #contactSection .socialLinks a i {
+  transition: color 0.4s ease;
   margin-right: 0.3rem;
 }
 #contactSection #contactForm {

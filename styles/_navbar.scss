@@ -20,6 +20,7 @@
         transition: color $transitionDuration ease, transform 0.5s ease;
 
         &:hover{
+            color: var(--primaryColor);
             transform: scale(0.9);
         }
     }
@@ -34,6 +35,14 @@
                 font-size: var(--linksFontSize);
                 transition: color $transitionDuration ease;
             }
+
+            li{
+                &:hover{
+                    a{
+                        color: var(--primaryColor);
+                    }
+                }
+            }
     }
 
     .navbarExtraBtns{
@@ -45,6 +54,7 @@
             transition: color $transitionDuration ease, transform 0.3s ease;
             transform: scale(1);
             &:hover{
+                color: var(--primaryColor);
                 transform: scale(0.9);
             }
         }
