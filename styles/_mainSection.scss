@@ -128,7 +128,7 @@
         }
         svg{
             display: none;
-            fill: var(--textHeadingColor);
+            fill: var(--primaryColor);
             transition: fill $transitionDuration ease;
         }
     }

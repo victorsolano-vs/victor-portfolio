@@ -396,7 +396,7 @@ body {
 }
 #mainSection .myStackTitle svg {
   display: none;
-  fill: var(--textHeadingColor);
+  fill: var(--primaryColor);
   transition: fill 0.4s ease;
 }
 
@@ -1125,6 +1125,9 @@ body {
   .watermark {
     top: 60%;
   }
+  #mainSection {
+    padding-top: 15rem;
+  }
   #mainSection .aboutMeText {
     max-width: 25rem;
   }
@@ -1139,5 +1142,8 @@ body {
   }
   .navbarContent {
     padding: 1rem 0;
+  }
+  #mainSection {
+    padding-top: 17rem;
   }
 }
