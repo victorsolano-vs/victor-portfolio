@@ -142,16 +142,3 @@ addBounceAnimation('.phoneNumber', '.fa-phone')
 addBounceAnimation('.github', '.fa-github')
 addBounceAnimation('.email', '.fa-envelope')
 addBounceAnimation('.linkedin', '.fa-linkedin')
-
-
-
-// function handleSubmit(){
-//     event.
-// }
-
-const form = document.querySelector('#contactForm')
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    document.body.style.background = 'red'
-    // form.reset()
-})
