@@ -13,18 +13,87 @@
     pointer-events: none;
     transform: translateY(40px) translateX(1%);
     transition: opacity 0.4s ease, transform 0.4s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    padding: 0 0.5rem;
 
     #modalExitBtn{
         cursor: pointer;
-        // background-color: blue;
         float: right;
-        margin: 0.5rem;
+        padding: 0.5rem 0 0 0;
+        transition: transform 0.3s ease;
+        svg{
+            $svgSize: 24px;
+            width: $svgSize;
+            height: $svgSize;
+        }
+        
         path{
             stroke: var(--textHeadingColor);
         }
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+
+    .modalContent{
+        // background: red;
+        max-width: 1024px;
+        margin: 3rem auto 0 auto;
+        text-align: center;
+
     }
 
 }
+
+
+.projectMainInfo{
+    .tagsBtnsSection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1rem;
+        
+        p{
+            color: var(--textColor);
+            font-size: var(--tagFontSize);
+            margin-bottom: 0.3rem;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 0.5rem;
+            li{
+                background: var(--backgroundColor);
+                color: var(--tagTextColor);
+                padding: 0.3rem 0.8rem;
+                font-size: var(--tagFontSize);
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .projLinks{
+        a{
+            @include buttonStyles;
+        }
+    }
+
+    .imgContainer{
+        img{
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+    .projectDescription{
+        color: var(--textColor);
+        font-size: var(--blockTextFontSize);
+    }
+}
+
+
 
 #overlay{
     z-index: 998;
@@ -36,6 +105,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 
 .modalShow{

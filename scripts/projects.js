@@ -72,38 +72,87 @@ function setModalTriggers(toRenderProj){
     modalTriggers.forEach((trigger, idx) => {
         trigger.addEventListener('click', () => {
 
-            modalOverlay.style.opacity = '0.8'
-            modalOverlay.style.pointerEvents = 'all'
-            modalContainer.classList.add('modalShow')
-            document.body.style.overflowY = 'hidden'
-    
+            showModal()
             renderModal(toRenderProj, idx)
             
         })
     })
 }
 
-
-
 exitBtn.addEventListener('click', () => {
+    hideModal()
+})
+
+modalOverlay.addEventListener('click', () => {
+    hideModal()
+
+})
+
+function showModal(){
+    modalOverlay.style.opacity = '0.8'
+    modalOverlay.style.pointerEvents = 'all'
+    modalContainer.classList.add('modalShow')
+    document.body.style.overflowY = 'hidden'
+}
+
+function hideModal(){
     modalOverlay.style.opacity = '0'
     modalOverlay.style.pointerEvents = 'none'
     modalContainer.classList.remove('modalShow')
     document.body.style.overflowY = 'scroll'
-
-})
+}
 
 function renderModal(toRenderProj, idx){
-    console.log('selected project index: ', idx)
-    console.log(toRenderProj)
+    const proj = toRenderProj[idx]
 
     document.querySelector('.modalContent').innerHTML = `
-        <p>${toRenderProj[idx].projectName}</p>
-        <p>${toRenderProj[idx].projectType}</p>
+    <div class = 'projectMainInfo'>
+        <h1 class = 'sectionTitle'>
+            ${proj.projectName}
+        </h1>
+        <div class = 'tagsBtnsSection'>
+            <div>
+                <p>${proj.projectType}</p>
+                <ul>
+                    ${proj.projectTechStack.map((p) => `
+                        <li>${p}</li>
+                        `).join('')}
+                </ul>
+            </div>
+            <div class = 'projLinks'>
+                <a href = ''>${proj.projectType === 'UX/UI Design' ? 'View Design' : 'View Project'}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4302 5.93005L20.5002 12.0001L14.4302 18.0701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 12H20.33" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+                <a href =''>
+                ${proj.projectType === 'UX/UI Design' ? 'View Case Study' : 'View Source Code'}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4302 5.93005L20.5002 12.0001L14.4302 18.0701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 12H20.33" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class = 'projectDescription'>
+            ${proj.projectDescription}
+        </div>
+
+        <div class = 'imgContainer'>
+            <img src ='${proj.projectImages.thumbnailView}' loading = 'lazy' alt =''test>
+            <img src ='${proj.projectImages.thumbnailView}' loading = 'lazy' alt =''test>
+            <img src ='${proj.projectImages.thumbnailView}' loading = 'lazy' alt =''test>
+        </div>
+    </div> 
     `
 
 
 }
+
+
+
 
 
 // animation for projects filter
