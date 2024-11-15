@@ -123,13 +123,6 @@ renderProjects(projects)
 
 
 
-
-
-
-
-
-
-
 // adding bounce animation to font awesome icons
 function addBounceAnimation(selector, iconClass) {
     const element = document.querySelector(selector)

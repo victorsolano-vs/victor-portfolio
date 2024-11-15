@@ -65,15 +65,17 @@ export function renderProjects(toRenderProj){
 const modalContainer = document.querySelector('.modal')
 const exitBtn = document.querySelector('#modalExitBtn')
 const modalOverlay = document.querySelector('#overlay')
-
+const modalTriggers = document.querySelectorAll('.projectLearnMore')
 
 function setModalTriggers(toRenderProj){
-    const modalTriggers = document.querySelectorAll('.projectLearnMore')
+
     modalTriggers.forEach((trigger, idx) => {
         trigger.addEventListener('click', () => {
+
             modalOverlay.style.opacity = '0.8'
             modalOverlay.style.pointerEvents = 'all'
             modalContainer.classList.add('modalShow')
+            document.body.style.overflowY = 'hidden'
     
             renderModal(toRenderProj, idx)
             
@@ -87,6 +89,8 @@ exitBtn.addEventListener('click', () => {
     modalOverlay.style.opacity = '0'
     modalOverlay.style.pointerEvents = 'none'
     modalContainer.classList.remove('modalShow')
+    document.body.style.overflowY = 'scroll'
+
 })
 
 function renderModal(toRenderProj, idx){

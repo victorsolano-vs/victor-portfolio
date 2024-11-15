@@ -3,18 +3,26 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    // transform: translateX(1%);
     height: 90%;
     width: 98%;
-    background: red; 
+    background: var(--accentColor); 
 
     border-radius: 10px 10px 0 0;
 
     opacity: 0;
     pointer-events: none;
-    transform: translateY(20px) translateX(1%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(40px) translateX(1%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 
+    #modalExitBtn{
+        cursor: pointer;
+        // background-color: blue;
+        float: right;
+        margin: 0.5rem;
+        path{
+            stroke: var(--textHeadingColor);
+        }
+    }
 
 }
 
