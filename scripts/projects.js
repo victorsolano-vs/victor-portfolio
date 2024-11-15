@@ -127,7 +127,7 @@ function renderModal(toRenderProj, idx){
                 </svg>
                 </a>
                 <a href =''>
-                ${proj.projectType === 'UX/UI Design' ? 'View Case Study' : 'View Source Code'}
+                ${proj.projectType === 'UX/UI Design' ? 'Case Study' : 'Source Code'}
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.4302 5.93005L20.5002 12.0001L14.4302 18.0701" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M3.5 12H20.33" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -164,6 +164,14 @@ const categoryList = document.querySelector('.categoryList')
 dropdownBtn.addEventListener('click', () => {
     dropdownSvg.classList.toggle('transformArrow')
     categoryList.classList.toggle('showCategoryList')
+})
+
+// when clicking outside the list, close the list
+document.addEventListener('click', (event) => {
+    if(!categoryList.contains(event.target) && !dropdownBtn.contains(event.target)){
+        dropdownSvg.classList.toggle('transformArrow')
+        categoryList.classList.remove('showCategoryList')
+    }
 })
 
 // make the selected text change the text on the main btn
