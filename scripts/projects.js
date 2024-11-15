@@ -65,9 +65,9 @@ export function renderProjects(toRenderProj){
 const modalContainer = document.querySelector('.modal')
 const exitBtn = document.querySelector('#modalExitBtn')
 const modalOverlay = document.querySelector('#overlay')
-const modalTriggers = document.querySelectorAll('.projectLearnMore')
 
 function setModalTriggers(toRenderProj){
+    const modalTriggers = document.querySelectorAll('.projectLearnMore')
 
     modalTriggers.forEach((trigger, idx) => {
         trigger.addEventListener('click', () => {
