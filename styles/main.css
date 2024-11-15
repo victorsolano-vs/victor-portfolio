@@ -118,7 +118,7 @@ body {
   left: 0;
   z-index: -1;
   pointer-events: none;
-  max-width: 100vw;
+  width: 100%;
 }
 .watermark .text {
   display: flex;
@@ -1151,8 +1151,5 @@ body {
   }
   .navbarContent {
     padding: 1rem 0;
-  }
-  #mainSection {
-    padding-top: 17rem;
   }
 }
