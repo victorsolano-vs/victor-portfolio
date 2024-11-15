@@ -5,7 +5,7 @@
     left: 0;
     height: 90%;
     width: 98%;
-    background: var(--accentColor); 
+    background: var(--backgroundColor); 
 
     border-radius: 10px 10px 0 0;
 
@@ -72,7 +72,7 @@
             display: flex;
             gap: 0.5rem;
             li{
-                background: var(--backgroundColor);
+                background: var(--accentColor);
                 color: var(--tagTextColor);
                 padding: 0.3rem 0.8rem;
                 font-size: var(--tagFontSize);
@@ -91,6 +91,7 @@
         img{
             width: 300px;
             margin: 0 auto;
+            border-radius: 10px;
         }
     }
     .projectDescription{
