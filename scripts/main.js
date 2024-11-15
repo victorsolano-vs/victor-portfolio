@@ -123,22 +123,37 @@ renderProjects(projects)
 
 
 
-// adding bounce animation to font awesome icons
-function addBounceAnimation(selector, iconClass) {
-    const element = document.querySelector(selector)
-    const icon = document.querySelector(iconClass)
+//============ adding bounce animation to font awesome icons ============
 
-    element.addEventListener('mouseenter', () => {
-        icon.classList.add('fa-bounce')
-    })
+// linkedin hover
+document.querySelector('.linkedin').addEventListener('mouseenter', () => {
+    document.querySelector('.linkedinLogo').classList.add('fa-bounce')
+})
+document.querySelector('.linkedin').addEventListener('mouseleave', () => {
+    document.querySelector('.linkedinLogo').classList.remove('fa-bounce')
+})
 
-    element.addEventListener('mouseleave', () => {
-        icon.classList.remove('fa-bounce')
-    })
-}
+//  phone hover
+document.querySelector('.phoneNumber').addEventListener('mouseenter', () => {
+    document.querySelector('.fa-phone').classList.add('fa-bounce')
+})
+document.querySelector('.phoneNumber').addEventListener('mouseleave', () => {
+    document.querySelector('.fa-phone').classList.remove('fa-bounce')
+})
 
-// Call the function for each icon
-addBounceAnimation('.phoneNumber', '.fa-phone')
-addBounceAnimation('.github', '.fa-github')
-addBounceAnimation('.email', '.fa-envelope')
-addBounceAnimation('.linkedin', '.fa-linkedin')
+
+// github hover
+document.querySelector('.github').addEventListener('mouseenter', () => {
+    document.querySelector('.fa-github').classList.add('fa-bounce')
+})
+document.querySelector('.github').addEventListener('mouseleave', () => {
+    document.querySelector('.fa-github').classList.remove('fa-bounce')
+})
+
+// email hover
+document.querySelector('.email').addEventListener('mouseenter', () => {
+    document.querySelector('.fa-envelope').classList.add('fa-bounce')
+})
+document.querySelector('.email').addEventListener('mouseleave', () => {
+    document.querySelector('.fa-envelope').classList.remove('fa-bounce')
+})
