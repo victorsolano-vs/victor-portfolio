@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         stagger: 0.1,
         ease: 'sine.out'
     }, '-=0.8')
-    .from('.sectionTitle span', {
+    .from('#mainSection .sectionTitle span', {
         duration: 0.5,
         y: 10,
         opacity: 0,
@@ -68,4 +68,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
         duration: 2,
         stagger: 0.1
     }, '-=0.1')
+    gsap.from('#portfolioSection .sectionTitle, .categoryList button, .projectsSection', {
+        scrollTrigger:{
+            trigger:'#portfolioSection',
+            start: 'top bottom'
+        },
+        duration: 2,
+        opacity:0,
+        y:20,
+        stagger: 0.2,
+        ease: 'sine.out'
+    })
+    gsap.from('#contactSection .sectionTitle, .socialLinks div, .formInput, #submitBtn', {
+        scrollTrigger:{
+            trigger:'#contactSection',
+            start: 'top bottom'
+        },
+        duration: 2,
+        opacity:0,
+        y:20,
+        stagger: 0.2,
+        ease: 'sine.out'
+    })
 })
