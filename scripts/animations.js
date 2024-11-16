@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // gsap.to('.sectionTitle',{
-    //     rotation: 360,
-    //     duration: 2
-    // })
+    gsap.registerPlugin(ScrollTrigger)
 
     var tl = gsap.timeline()
     tl.from('.navbar',{
@@ -50,5 +47,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
         stagger: 0.1,
         ease: 'sine.out'
     })
+
+    // scroll triggers for sections
+    gsap.from('#experienceSection .leftSection', {
+        scrollTrigger:{
+            trigger:'#experienceSection',
+            start: 'top bottom'
+        },
+        opacity: 0,
+        x: -20,
+        duration: 2
+    })
+    gsap.from('#experienceSection .rightSection, #experienceSection .expBlock', {
+        scrollTrigger:{
+            trigger:'#experienceSection',
+            start: 'top bottom'
+        },
+        opacity: 0,
+        x: 20,
+        duration: 2,
+        stagger: 0.1
+    }, '-=0.1')
 })
-// test code
