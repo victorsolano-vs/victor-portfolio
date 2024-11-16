@@ -63,6 +63,9 @@ a {
   font-weight: 600;
   transition: color 0.4s ease;
 }
+.sectionTitle span {
+  display: inline-block;
+}
 
 @keyframes showCursor {
   0% {

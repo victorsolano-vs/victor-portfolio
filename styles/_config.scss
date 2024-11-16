@@ -86,6 +86,12 @@ a{
     color: var(--textHeadingColor);
     font-weight: 600;
     transition: color $transitionDuration ease;
+    
+    // letter-spacing: 0;
+    span{
+        display: inline-block;
+    }
+    
 }
 
 // common code for navbar
