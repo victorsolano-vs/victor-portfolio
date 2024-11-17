@@ -49,45 +49,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
 
     // scroll triggers for sections
-    gsap.from('#experienceSection .leftSection', {
-        scrollTrigger:{
-            trigger:'#experienceSection',
-            start: 'top bottom'
-        },
-        opacity: 0,
-        x: -20,
-        duration: 2
-    })
-    gsap.from('#experienceSection .rightSection, #experienceSection .expBlock', {
-        scrollTrigger:{
-            trigger:'#experienceSection',
-            start: 'top bottom'
-        },
-        opacity: 0,
-        x: 20,
-        duration: 2,
-        stagger: 0.1
-    }, '-=0.1')
-    gsap.from('#portfolioSection .sectionTitle, .categoryList button, .projectsSection', {
-        scrollTrigger:{
-            trigger:'#portfolioSection',
-            start: 'top bottom'
-        },
-        duration: 2,
-        opacity:0,
-        y:20,
-        stagger: 0.2,
-        ease: 'sine.out'
-    })
-    gsap.from('#contactSection .sectionTitle, .socialLinks div, .formInput, #submitBtn', {
-        scrollTrigger:{
-            trigger:'#contactSection',
-            start: 'top bottom'
-        },
-        duration: 2,
-        opacity:0,
-        y:20,
-        stagger: 0.2,
-        ease: 'sine.out'
-    })
+    // gsap.from('#experienceSection .leftSection', {
+    //     scrollTrigger:{
+    //         trigger:'#experienceSection',
+    //         start: 'top bottom'
+    //     },
+    //     opacity: 0,
+    //     x: -20,
+    //     duration: 2
+    // })
+    // gsap.from('#experienceSection .rightSection, #experienceSection .expBlock', {
+    //     scrollTrigger:{
+    //         trigger:'#experienceSection',
+    //         start: 'top bottom'
+    //     },
+    //     opacity: 0,
+    //     x: 20,
+    //     duration: 2,
+    //     stagger: 0.1
+    // }, '-=0.1') this one messes up the mobile navbar
+    // gsap.from('#portfolioSection .sectionTitle, .categoryList button, .projectsSection', {
+    //     scrollTrigger:{
+    //         trigger:'#portfolioSection',
+    //         start: 'top bottom'
+    //     },
+    //     duration: 2,
+    //     opacity:0,
+    //     y:20,
+    //     stagger: 0.2,
+    //     ease: 'sine.out'
+    // })
+    // gsap.from('#contactSection .sectionTitle, .socialLinks div, .formInput, #submitBtn', {
+    //     scrollTrigger:{
+    //         trigger:'#contactSection',
+    //         start: 'top bottom'
+    //     },
+    //     duration: 2,
+    //     opacity:0,
+    //     y:20,
+    //     stagger: 0.2,
+    //     ease: 'sine.out'
+    // })
 })
